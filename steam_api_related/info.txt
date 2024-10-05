@@ -1,0 +1,3 @@
+Datasets obtained from using steam API, as a test:
+steam_game.zip -> All games id,name on steam, with some filters
+final_stea,_games.zip -> 10 games with detailed information, obtainable with script "query_steam_api.py"
