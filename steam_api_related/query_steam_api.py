@@ -1,4 +1,4 @@
-from config import STEAM_API_KEY
+from datasets.config import STEAM_API_KEY
 
 import requests
 import time
