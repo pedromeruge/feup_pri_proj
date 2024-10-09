@@ -1,3 +1,6 @@
 Datasets obtained from using steam API, as a test:
 steam_game.zip -> All games id,name on steam, with some filters
-final_stea,_games.zip -> 10 games with detailed information, obtainable with script "query_steam_api.py"
+final_steam_games.zip -> 10 games with detailed information, obtainable with script "query_steam_api.py". 
+                        Could be changed to include detailed information of all games on steam, but steam API has 100,000 requests daily limit, and there are more than that amount of games on steam. 
+                        The info obtained from the steam API is a bit more complete than that of 1st dataset (it has a bit more fields, and has current data of 2024), but i don't think this new data is relevant in relation to 1st dataset.
+                

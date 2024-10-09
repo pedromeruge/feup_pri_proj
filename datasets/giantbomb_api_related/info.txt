@@ -1,0 +1,9 @@
+Datasets obtained from using giantbomb API, as a test:
+- What i wanted in specific from this API was the fact that they organize a list of characters, concepts, places, and object names for a specific game, which i think would be very cool to add in our search engine. However, as stated below, i struggled to find this
+
+giantbomb_games.json -> detailed information of searching for a specific game on giantbomb API, in this case "Team Fortress Classic". 
+                        Only relevant new information I could find was field "deck", but i'm not sure if we want it?
+                        Also giantbomb API, has a a low rate limit of requests, so we should be sure on which small subset of games we want to query from the API first
+
+giantbomb_games_with_entity_names.json -> attempt at extracting the list of characters, concepts, places, and object names for a specific game. Couldn't understand how the API works.
+                                          I tried querying characters by the specific gameID i got from "giantbomb_games.json", but it wasn't working?? Always returns the same 100 random unrelated games characters...
