@@ -1,1 +1,8 @@
 Dataset obtained from: https://www.kaggle.com/datasets/fronkongames/steam-games-dataset?select=games.csv
+
+# Content: 
+Contained basic info of steam games from 2003?-2023
+Data obtained from steam API, so it is legal
+
+# Steps:
+process_dataset.py -> Filtered some game names that weren't western or appropriate, and only included relevant fields -> "obtained parsed_games.json"

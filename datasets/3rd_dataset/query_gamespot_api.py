@@ -3,14 +3,16 @@ import sys
 import requests
 import time
 import json
+from datetime import datetime
 
 # import gamespot api key from config file
 api_key_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(api_key_dir)
 from config import GAMESPOT_API_KEY
 
-GET_GAME_REVIEWS_URL = "http://www.gamespot.com/api/games/"
-RATE_LIMIT = 0.5 # how long, in seconds???
+GET_GAME_REVIEWS_URL = "http://www.gamespot.com/api/reviews/"
+RATE_LIMIT = 1 # how long, in seconds???
+RETRY_LIMIT = 5 * 60 # wait for 15 minutes if exceeded rate limit
 
 # custom user agent
 headers = {
@@ -19,8 +21,9 @@ headers = {
 
 # save progress of game reviews to a JSON file
 def save_progress(final_reviews):
-
-    with open('gamespot_game_reviews.json', 'w') as f:
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    filename = f'gamespot_game_reviews{current_date}.json'
+    with open(filename, 'w') as f:
         json.dump(final_reviews, f, ensure_ascii=False, indent=4)
     print(f"Saved gamespot reviews for {len(final_reviews)} games")
 
@@ -31,66 +34,46 @@ def get_game_names_to_obtain_reviews_for():
     return [game['name'] for game in games]
 
 #given a game name, finds the corresponding games reviews api url
-def fetch_game_reviews_api_url(game_name):
+def fetch_game_reviews_by_title(game_name):
 
     params = {
         'api_key': GAMESPOT_API_KEY,
         'format': 'json',
-        'filter': f'name:{game_name}',  # filter by game name,
-        'limit': 1  # only need specific game's result
+        'filter': f'title:{game_name}',  # filter by game name,
+        'field_list': 'publish_date,update_date,authors,title,score,deck,good,bad,body,game'
     }
 
     response = requests.get(GET_GAME_REVIEWS_URL, params=params, headers=headers)
     if response.status_code == 200:
         data = response.json()
         results = data.get('results', [])
-        if results:
-            # Return the reviews_api_url for the game
-            # print(results[0])
-            return results[0].get('reviews_api_url', None)
-        else:
-            print(f"No game found with name {game_name}")
-            return None
+        filtered_reviews = [
+            review for review in results 
+            if 'game' in review and
+            review['game']['name'].lower() == game_name.lower()] # filter only game reviews that actually review that exact game name
         
-    elif response.status_code == 403:
+        return filtered_reviews
+        
+    elif response.status_code == 420:
         raise Exception("Rate limit exceeded")
     
     else:
         print(f"Error: Received status code {response.status_code} for {game_name}")
         return None
 
-# provided a games review url, gets the details of reviews
-def fetch_game_reviews_by_url(reviews_api_url):
-    params = {
-        'api_key': GAMESPOT_API_KEY,
-        'format': 'json',
-        'limit': 10  # we won't need more than 10 reviews of a game, even if there ar emore
-    }
-
-    response = requests.get(reviews_api_url, params=params, headers=headers)
-    if response.status_code == 200:
-        data = response.json()
-        # Extract relevant data from the response
-        return data.get('results', [])
-    
-    elif response.status_code == 403:
-        raise Exception("Rate limit exceeded")
-    else:
-        print(f"Error: Received status code {response.status_code} for {reviews_api_url}")
-        return None
-
 #obtain reviews from gamespot for all games still present in merged_games.json dataset
 def fetch_all_games_reviews():
     final_reviews = {}
 
+
     games_to_obtain_reviews = get_game_names_to_obtain_reviews_for()
     
     for curr_game_index, game_name in enumerate(games_to_obtain_reviews):
-        try:
-            game_reviews_api_url = fetch_game_reviews_api_url(game_name)
-            if game_reviews_api_url:
-                print("review_url: ", game_reviews_api_url)
-                game_reviews = fetch_game_reviews_by_url(game_reviews_api_url)
+        success = False
+        retry_count = 0
+        while not success:
+            try:
+                game_reviews = fetch_game_reviews_by_title(game_name)
 
                 if game_reviews:
                     final_reviews[game_name] = game_reviews
@@ -98,12 +81,15 @@ def fetch_all_games_reviews():
                 else:
                     print(f"No reviews found for game {game_name}")
 
-            time.sleep(RATE_LIMIT)
+                success = True # sucess if obtianed reviews response
+                time.sleep(RATE_LIMIT)
 
-        except Exception as e:
-            print(f"Error encountered for Game {curr_game_index} ({game_name}): {e}")
-            save_progress(final_reviews)
-            break # stop loop if limit rate exceeded
+            except Exception as e:
+                print(f"Error encountered for Game {curr_game_index} ({game_name}): {e}")
+                if "Rate limit exceeded" in str(e):
+                    print("Rate limit exceeded. Waiting for 5 minutes before retrying...")
+                    save_progress(final_reviews)
+                    time.sleep(RETRY_LIMIT)
 
     save_progress(final_reviews)
 
