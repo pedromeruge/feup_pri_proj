@@ -11,9 +11,9 @@ def main():
         games = json.load(games_json)
 
     parsed_games = remove_unwanted_columns_dataset(games)
-    # parsed_games = filter_known_games(parsed_games)
+    parsed_games = filter_known_games(parsed_games)
 
-    count_games(parsed_games)
+    # count_games(parsed_games)
 
     with open('parsed_games.json','w') as parsed_games_json:
         json.dump(parsed_games, parsed_games_json, ensure_ascii=False, indent=4)
@@ -75,5 +75,5 @@ def count_games(games):
     print("total games", len(games))
     print("games with sale estimates",len([game for game in games if game['avg_sales']]))
     print("games with date",len([game for game in games if game['release_date']]))
-    print("games with sale estimates >= threshold",len([game for game in games if game['avg_sales'] >= POPULARITY_THRESHOLD]))
+    print(f"games with sale estimates >= threshold in {START_YEAR}-{END_YEAR}:",len([game for game in games if game['avg_sales'] >= POPULARITY_THRESHOLD and int(game['release_date'].split(" ")[-1]) >= START_YEAR and int(game['release_date'].split(" ")[-1]) <= END_YEAR]))
 main()

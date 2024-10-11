@@ -17,4 +17,4 @@ process_dataset.py Filtered some game names that weren't western or appropriate,
  Games after initial filtering: 81364
  Games with date: 81364
  Games with sale estimates: 70644
- Games with sales higher or equal to 100.000, from 2013-2022: 5869
+ Games with sales higher or equal to 100.000, from 2013-2022: 4931
