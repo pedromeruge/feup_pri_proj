@@ -12,7 +12,7 @@ from config import GAMESPOT_API_KEY
 
 GET_GAME_REVIEWS_URL = "http://www.gamespot.com/api/reviews/"
 RATE_LIMIT = 1 # how long, in seconds???
-RETRY_LIMIT = 5 * 60 # wait for 15 minutes if exceeded rate limit
+RETRY_LIMIT = 15 * 60 # wait for 15 minutes if exceeded rate limit
 
 # custom user agent
 headers = {
@@ -21,8 +21,8 @@ headers = {
 
 # save progress of game reviews to a JSON file
 def save_progress(final_reviews):
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    filename = f'gamespot_game_reviews{current_date}.json'
+    timestamp = datetime.now().strftime("%d-%H-%M")
+    filename = f'results/gamespot_game_reviews_{timestamp}.json'
     with open(filename, 'w') as f:
         json.dump(final_reviews, f, ensure_ascii=False, indent=4)
     print(f"Saved gamespot reviews for {len(final_reviews)} games")
@@ -31,7 +31,7 @@ def save_progress(final_reviews):
 def get_game_names_to_obtain_reviews_for():
     with open('../2nd_dataset/merged_games.json','r') as games_json:
         games = json.load(games_json)
-    return [game['name'] for game in games]
+    return [game['name'] for game in games][4020:]
 
 #given a game name, finds the corresponding games reviews api url
 def fetch_game_reviews_by_title(game_name):
@@ -39,8 +39,7 @@ def fetch_game_reviews_by_title(game_name):
     params = {
         'api_key': GAMESPOT_API_KEY,
         'format': 'json',
-        'filter': f'title:{game_name}',  # filter by game name,
-        'field_list': 'publish_date,update_date,authors,title,score,deck,good,bad,body,game'
+        'filter': f'title:{game_name}',  # filter by game name
     }
 
     response = requests.get(GET_GAME_REVIEWS_URL, params=params, headers=headers)
@@ -87,9 +86,11 @@ def fetch_all_games_reviews():
             except Exception as e:
                 print(f"Error encountered for Game {curr_game_index} ({game_name}): {e}")
                 if "Rate limit exceeded" in str(e):
-                    print("Rate limit exceeded. Waiting for 5 minutes before retrying...")
+                    print("Rate limit exceeded. Waiting for 15 minutes before retrying...")
                     save_progress(final_reviews)
                     time.sleep(RETRY_LIMIT)
+                else:
+                    break
 
     save_progress(final_reviews)
 
