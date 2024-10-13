@@ -4,7 +4,7 @@ import seaborn as sns
 from collections import Counter
 
 # Step 1: Load the JSON file
-json_file_path = 'parsed_games.json'  # Replace with the actual path to your file
+json_file_path = 'merged_games.json'  # Replace with the actual path to your file
 df = pd.read_json(json_file_path)
 
 # Step 2: Basic Inspection
