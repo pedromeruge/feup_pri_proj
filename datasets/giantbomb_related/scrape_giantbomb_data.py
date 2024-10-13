@@ -5,18 +5,18 @@ import json
 
 RATE_LIMIT = 0.5
 
-def main():
+#scrape additional data of overview, characters,locations, concepts, objects for games found inside src_path
+def scrape(src_path, dst_path):
 
-    game_names = get_game_names_to_obtain_info_for()
-    # data = scrape_game_data_from_game_names(game_names)
+    game_names = get_game_names_to_obtain_info_for(src_path)
+    data = scrape_game_data_from_game_names(game_names)
 
-    # with open('scraped_info.json', 'w') as f:
-    #     json.dump(data, f, ensure_ascii=False, indent=4)
-
+    with open(dst_path, 'w') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 # build the list of games names we want to find extra info for
-def get_game_names_to_obtain_info_for():
-    with open('../1st_dataset/parsed_games.json','r') as games_json:
+def get_game_names_to_obtain_info_for(src_path):
+    with open(src_path,'r') as games_json:
         games = json.load(games_json)
     return [game['name'] for game in games]
 
@@ -33,13 +33,21 @@ def search_game(game_name):
     soup = BeautifulSoup(response.text, 'html.parser')
     
     # find first game's url in list of search results
-    result = soup.find('ul', id='js-sort-filter-results').find('a',href=True)
+    first_result = soup.find('ul', id='js-sort-filter-results')
+
+    if not first_result:
+        print(f"No search results found for {game_name}")
+        return None
     
-    if result:
-        game_url = "https://www.giantbomb.com" + result['href']
+    href_result = first_result.find('a',href=True)
+    title_result = first_result.find('h3',class_='title')
+    title_tag = title_result.get_text(strip=True).lower() if title_result else None
+
+    if href_result and title_tag == game_name.strip().lower(): # check if any result, and if there is a result it is the correct name
+        game_url = "https://www.giantbomb.com" + href_result['href']
         return game_url
     else:
-        print(f"No search results found for {game_name}.")
+        print(f"Game found, but title does not match")
         return None
 
 # Scrape the main content from the game page
@@ -98,13 +106,12 @@ def scrape_multiple_pages(url, tag, class_name):
         next_page_item = soup.find('li', class_='skip next')
 
         if not next_page_item:
-            print(f"(pages 1-{page})")
+            # print(f"(pages 1-{page})")
             break
 
         # Construct the next page URL
-        next_page_url = next_page_item.a['href']
         page += 1
-        time.sleep(0.5)
+        time.sleep(RATE_LIMIT)
 
     return all_titles
 
@@ -114,22 +121,21 @@ def scrape_game_data(game_name):
     
     game_data = {}
     if game_url:
-        print(f"Found game {game_name} URL")
+        print(f"Found game {game_name}")
         
         # scrape game description
-        game_data["giantbomb_text"] = scrape_game_page(game_url)
+        game_data["giantbomb_overview"] = scrape_game_page(game_url)
 
-        if game_data["giantbomb_text"]:
-            print(f">>Found game description")
+        # if game_data["giantbomb_text"]:
+        #     print(f">>Found game description")
 
         # scrape extra topics
         extra_pages_info = ["characters","locations","concepts","objects"]
 
         for page in extra_pages_info:
             game_data[page] = scrape_additional_info_page(game_url, page)
-            if game_data[page]:
-                print(f">>Found games {page}")
-    
+            # if game_data[page]:
+                # print(f">>Found games {page}")
     else:
         print(f"Could not find {game_name} URL")
 
@@ -137,10 +143,9 @@ def scrape_game_data(game_name):
 
 # 
 def scrape_game_data_from_game_names(game_names_list):
+    total_len = len(game_names_list)
     results = {}
-    for game_name in game_names_list:
+    for i, game_name in enumerate(game_names_list):
         results[game_name] = scrape_game_data(game_name)
-
+        print(f"[{i+1}/{total_len}] done")
     return results
-
-main()

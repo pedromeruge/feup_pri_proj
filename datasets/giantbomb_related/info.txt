@@ -1,0 +1,8 @@
+
+- Giantbomb organizes a list of characters, concepts, places, and object names for a specific game
+
+query_giantbomb_api.py -> uses API to return 
+giantbomb_games.json -> sample of detailed information of searching for a specific game on giantbomb API, in this case "Team Fortress Classic". 
+                        Only relevant new information I could find was field "deck", but i'm not sure if we want it?
+
+
