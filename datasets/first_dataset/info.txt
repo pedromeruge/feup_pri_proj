@@ -7,14 +7,8 @@ Also some data from steamspy about estimated sales
 
 
 # Steps:
-process_dataset.py Filtered some game names that weren't western or appropriate, and only included relevant fields
+process_dataset.py Filtered some game names that weren't western or appropriate, and only included relevant fields and entries
                       Only included games from 2013-2022 (10 year range, and last year has a bit of space from 2024, to allow for more data produced on those games)
                       Only included games with estimated sales >= 100.000
                       
  -> "obtained parsed_games.json"
-
- Original total games: 96509
- Games after initial filtering: 81364
- Games with date: 81364
- Games with sale estimates: 70644
- Games with sales higher or equal to 100.000, from 2013-2022: 4931

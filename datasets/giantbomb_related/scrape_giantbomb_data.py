@@ -10,10 +10,9 @@ def scrape(src_path, dst_path):
 
     game_names = get_game_names_to_obtain_info_for(src_path)
     data = scrape_game_data_from_game_names(game_names)
-    parsed_data = process_dataset(data)
 
     with open(dst_path, 'w') as f:
-        json.dump(parsed_data, f, ensure_ascii=False, indent=4)
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 # build the list of games names we want to find extra info for
 def get_game_names_to_obtain_info_for(src_path):
@@ -150,23 +149,3 @@ def scrape_game_data_from_game_names(game_names_list):
         results[game_name] = scrape_game_data(game_name)
         print(f"[{i+1}/{total_len}] done")
     return results
-
-# parse dataset
-def process_dataset(data):
-    final_data = {}
-    for name,game in data.items():
-        if not game:
-            empty_object = {
-                "giantbomb_overview": "",
-                "characters": [],
-                "locations": [],
-                "concepts": [],
-                "objects": []
-            }
-            final_data[name] = empty_object
-
-        else:
-            if game['giantbomb_overview'] == "No description":
-                game['giantbomb_overview'] = ""
-            final_data[name] = game
-    return final_data        

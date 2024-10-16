@@ -164,3 +164,4 @@ cython_debug/
 #ignore STEAM_API_KEY file
 config.py
 *.json
+models/*.bak_*
