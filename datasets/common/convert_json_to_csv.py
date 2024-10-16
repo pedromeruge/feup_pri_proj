@@ -17,15 +17,14 @@ def convert_parsed_games_to_csv():
             "name": game["name"],
             "required_age": game["required_age"],
             "price": game["price"],
-            "steam_description": game["description"],
+            "steam_description": game["steam_description"],
             "developers": ';'.join(game["developers"]),  
             "publishers": ';'.join(game["publishers"]),  
             "categories": ';'.join(game["categories"]),  
             "genres": ';'.join(game["genres"]),        
             "supported_languages": ';'.join(game["supported_languages"]),
             "header_image": game["header_image"],
-            "os": ';'.join(game["os"]),                
-            "tags": ';'.join(game["tags"]),            
+            "os": ';'.join(game["os"]),                        
             "avg_sales": game["avg_sales"],
             "steam_upvotes": game["steam_upvotes"],
             "steam_downvotes": game["steam_downvotes"],
@@ -79,4 +78,4 @@ def convert_orig_games_dataset_to_csv():
     # Export to CSV
     df.to_csv(dest_file_path, index=False)
 
-convert_orig_games_dataset_to_csv()
+convert_parsed_games_to_csv()

@@ -133,13 +133,18 @@ def correct_words(field_names, games):
 
 #filtering games in relation to release_date and review count
 def filter_known_games(games):
+    unwanted_categories=['Software','Utilities']
     filtered_games = []
 
     for game in games:
 
         release_year = game['release_date']['year']
 
-        if game['avg_sales'] >= POPULARITY_THRESHOLD and release_year >= START_YEAR and release_year <= END_YEAR and (game['steam_upvotes'] + game['steam_downvotes']) >= REVIEW_THRESHOLD:
+        if (game['avg_sales'] >= POPULARITY_THRESHOLD 
+            and release_year >= START_YEAR and release_year <= END_YEAR 
+            and (game['steam_upvotes'] + game['steam_downvotes']) >= REVIEW_THRESHOLD
+            and not any(category in unwanted_categories for category in game['categories']) # filter out "games" on steam that are actually software, or utility apps
+            and not any(genre in unwanted_categories for genre in game['genres'])):
             filtered_games.append(game)
 
     return filtered_games
