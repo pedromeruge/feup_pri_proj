@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load dataset
+
 data = pd.read_json('merged_games_final.json')
 
 # 1. Key Features and Dataset Overview
@@ -25,7 +25,7 @@ plt.show()
 
 # 4. Avg Sales Distribution
 plt.figure(figsize=(10, 6))
-plt.hist(data['avg_sales'], bins=30, color='green', edgecolor='black', log=True)  # Log scale for visibility
+plt.hist(data['avg_sales'], bins=30, color='green', edgecolor='black', log=True)
 plt.title('Distribution of Average Sales')
 plt.xlabel('Average Sales')
 plt.ylabel('Frequency (Log Scale)')
