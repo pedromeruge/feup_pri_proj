@@ -1,0 +1,10 @@
+Disregard this folder for now, it was just a test of steam's api.
+
+steam_game.json -> All games id,name on steam, with some filters
+final_steam_games.json -> 10 games with detailed information, obtainable with script "query_steam_api.py".
+                        The info obtained from the steam API is a bit more complete than that of 1st dataset (it has a bit more fields, and has current data of 2024), but i don't think this new data is relevant in relation to what we have in 2nd_dataset/merged_games.json.
+                        Could be changed to include detailed information of all games on steam, but steam API has 100,000 requests daily limit, and there are more than that amount of games on steam. 
+
+query_steam_api.py -> Obtains detailed information for all first 20000, games on the "steam_game.json" file. Only used it for 10 games because i'm not sure we will need this data for the final dataset
+
+- steam API daily limit is 100.000 requests

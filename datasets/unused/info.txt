@@ -1,0 +1,5 @@
+These folder contains other datasets and APIs explored, but that weren't used in the final pipeline.
+
+second_dataset folder -> attemp to parse a dataset with reviews of video games from different plataforms. Contained too much empty/null data, and was rejected
+steam_api_related folder -> script to obtain data from steam API, but ended up using the Kaggle dataset that contained additional statistics from Steam SteamSpy
+third_dataset folder ->  script to obtain data from gamespot API, but very limited rates, non-viable
