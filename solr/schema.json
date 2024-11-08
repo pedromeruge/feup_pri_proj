@@ -1,0 +1,152 @@
+{
+	"add-field-type": [
+        {
+            "name":"complexStringField",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
+                    {"class":"solr.LowerCaseFilterFactory"}
+                ]
+            }
+        },
+        {
+            "name": "singleWordField",
+            "class": "solr.StrField"
+        },
+        {
+            "name": "intField",
+            "class": "solr.IntPointField"
+        },
+        {
+            "name": "floatField",
+            "class": "solr.FloatPointField"
+        }
+    ],
+    "add-field": [
+        {
+            "name": "name",
+            "type": "complexStringField",
+            "indexed": true
+        },
+        {
+            "name": "required_age",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "price",
+            "type": "floatField",
+            "indexed": true
+        },
+        {
+            "name": "developers",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "publishers",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "genres",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "supported_languages",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "header_image",
+            "type": "singleWordField"
+        },        
+        {
+            "name": "steam_description",
+            "type": "complexStringField",
+            "indexed": true
+        },
+        {
+            "name": "os",
+            "type": "singleWordField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "video",
+            "type": "singleWordField"
+        },
+        {
+            "name": "avg_sales",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "steam_upvotes",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "steam_downvotes",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "categories",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "giantbomb_overview",
+            "type": "complexStringField",
+            "indexed": true
+        },
+        {
+            "name": "characters",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "locations",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "specific_concepts",
+            "type": "complexStringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "ign_review_text",
+            "type": "complexStringField",
+            "indexed": true
+        },
+        {
+            "name": "ign_score",
+            "type": "floatField",
+            "indexed": true
+        }
+    ]
+}
