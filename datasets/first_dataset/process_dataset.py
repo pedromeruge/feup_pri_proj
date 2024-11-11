@@ -57,11 +57,11 @@ def remove_unwanted_columns_dataset(games):
                 curr_game['tags'] = list(game['tags'].keys()) if game['tags'] else []
                 curr_game['video'] = game['movies'][-1] if game['movies'] else "" # intro video of the steampage if it exists
                 curr_game['avg_sales'] = int((int(game["estimated_owners"].split(" - ")[0]) + int(game["estimated_owners"].split(" - ")[1])) / 2) if game["estimated_owners"] else -1 # avg between steamspy estimated min sales and max sales
-                # curr_game['steam_id'] = steam_id
+                curr_game['id'] = steam_id
                 curr_game['steam_upvotes'] = game['positive']
                 curr_game['steam_downvotes'] = game['negative']
 
-                curr_game['release_date'] =  parse_date(game['release_date']) # split date into 3 array values
+                curr_game['release_date'] =  parse_date(game['release_date']) # split date into Solr’s ISO 8601 format
 
                 parsed_games.append(curr_game)
 
@@ -138,7 +138,7 @@ def filter_known_games(games):
 
     for game in games:
 
-        release_year = game['release_date']['year']
+        release_year = datetime.strptime(game['release_date'], "%Y-%m-%dT%H:%M:%SZ").year
 
         if (game['avg_sales'] >= POPULARITY_THRESHOLD 
             and release_year >= START_YEAR and release_year <= END_YEAR 
@@ -154,12 +154,14 @@ def parse_date(date_string):
     try:
         # parse full dates like "Jun 4, 2018"
         parsed_date = datetime.strptime(date_string, "%b %d, %Y")
-        return {"day": parsed_date.day, "month": parsed_date.month, "year":parsed_date.year}
+        return parsed_date.strftime("%Y-%m-%dT%H:%M:%SZ")
     except ValueError:
         try:
             # parse partial dates, like format "May 2020"
             parsed_date = datetime.strptime(date_string, "%b %Y")
-            return {"day": None, "month": parsed_date.month, "year":parsed_date.year}
+            # assuming day is the first of the month
+            parsed_date = parsed_date.replace(day=1)
+            return parsed_date.strftime("%Y-%m-%dT%H:%M:%SZ")
         except ValueError:
             return "Invalid date format"
 

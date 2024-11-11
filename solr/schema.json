@@ -1,29 +1,7 @@
 {
 	"add-field-type": [
         {
-            "name":"complexStringField",
-            "class":"solr.TextField",
-            "indexAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
-                },
-                "filters":[
-                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
-                    {"class":"solr.LowerCaseFilterFactory"}
-                ]
-            },
-            "queryAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
-                },
-                "filters":[
-                    {"class":"solr.ASCIIFoldingFilterFactory", "preserveOriginal":true},
-                    {"class":"solr.LowerCaseFilterFactory"}
-                ]
-            }
-        },
-        {
-            "name": "singleWordField",
+            "name": "stringField",
             "class": "solr.StrField"
         },
         {
@@ -33,13 +11,180 @@
         {
             "name": "floatField",
             "class": "solr.FloatPointField"
+        },
+        {
+            "name": "dateField",
+            "class": "solr.DatePointField"
+        },
+        {
+            "name":"baseStringField",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class": "solr.ASCIIFoldingFilterFactory"},
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
+                        "replacement": "$1$2",
+                        "replace": "all"
+                    },
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    }
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class": "solr.ASCIIFoldingFilterFactory"},
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
+                        "replacement": "$1$2",
+                        "replace": "all"
+                    },
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                ]
+            }
+        },
+        {
+            "name":"longTextualField",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class": "solr.ASCIIFoldingFilterFactory"},
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
+                        "replacement": "$1$2",
+                        "replace": "all"
+                    },
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+                    {"class": "solr.StopFilterFactory",
+                        "words": "stopwords.txt",
+                        "ignoreCase":true
+                    },
+                    {"class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms.txt",
+                        "expand": true
+                    },
+                    {"class": "solr.SnowballPorterFilterFactory", 
+                        "language": "English"
+                    }
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class": "solr.ASCIIFoldingFilterFactory"},
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
+                        "replacement": "$1$2",
+                        "replace": "all"
+                    },
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+                    {"class": "solr.StopFilterFactory",
+                        "words": "stopwords.txt",
+                        "ignoreCase":true
+                    },
+                    {"class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms.txt",
+                        "expand": true
+                    },
+                    {"class": "solr.SnowballPorterFilterFactory", 
+                        "language": "English"
+                    },
+                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                ]
+            }
+        },
+        {
+            "name":"specificNamesTextualField",
+            "class":"solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class": "solr.ASCIIFoldingFilterFactory"},
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
+                        "replacement": "$1$2",
+                        "replace": "all"
+                    },
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+
+                    {"class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms.txt",
+                        "expand": true
+                    },
+                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                ]
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                },
+                "filters":[
+                    {"class":"solr.LowerCaseFilterFactory"},
+                    {"class": "solr.ASCIIFoldingFilterFactory"},
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
+                        "replacement": "$1$2",
+                        "replace": "all"
+                    },
+                    {"class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+
+                    {"class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms.txt",
+                        "expand": true
+                    },
+                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                ]
+            }
         }
     ],
     "add-field": [
         {
             "name": "name",
-            "type": "complexStringField",
-            "indexed": true
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "required": true
         },
         {
             "name": "required_age",
@@ -53,46 +198,46 @@
         },
         {
             "name": "developers",
-            "type": "complexStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "publishers",
-            "type": "complexStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "genres",
-            "type": "complexStringField",
+            "type": "baseStringField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "supported_languages",
-            "type": "complexStringField",
+            "type": "baseStringField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "header_image",
-            "type": "singleWordField"
+            "type": "stringField"
         },        
         {
             "name": "steam_description",
-            "type": "complexStringField",
+            "type": "longTextualField",
             "indexed": true
         },
         {
             "name": "os",
-            "type": "singleWordField",
+            "type": "stringField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "video",
-            "type": "singleWordField"
+            "type": "stringField"
         },
         {
             "name": "avg_sales",
@@ -110,37 +255,42 @@
             "indexed": true
         },
         {
+            "name": "release_date",
+            "type": "dateField",
+            "indexed": true
+        },
+        {
             "name": "categories",
-            "type": "complexStringField",
+            "type": "baseStringField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "giantbomb_overview",
-            "type": "complexStringField",
+            "type": "longTextualField",
             "indexed": true
         },
         {
             "name": "characters",
-            "type": "complexStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "locations",
-            "type": "complexStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "specific_concepts",
-            "type": "complexStringField",
+            "type": "baseStringField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "ign_review_text",
-            "type": "complexStringField",
+            "type": "longTextualField",
             "indexed": true
         },
         {
