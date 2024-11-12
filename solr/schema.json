@@ -80,7 +80,7 @@
                         "replace": "all"
                     },
                     {"class": "solr.StopFilterFactory",
-                        "words": "stopwords.txt",
+                        "words": "lang/stopwords_en.txt",
                         "ignoreCase":true
                     },
                     {"class": "solr.SynonymGraphFilterFactory",
@@ -110,7 +110,7 @@
                         "replace": "all"
                     },
                     {"class": "solr.StopFilterFactory",
-                        "words": "stopwords.txt",
+                        "words": "lang/stopwords_en.txt",
                         "ignoreCase":true
                     },
                     {"class": "solr.SynonymGraphFilterFactory",

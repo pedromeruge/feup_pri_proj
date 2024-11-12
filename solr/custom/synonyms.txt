@@ -1,0 +1,125 @@
+# Game genres and acronyms
+rpg, role-playing game, role playing game, roleplay, roleplaying, role-play, role-playing, rpgs, jrpg, turn-based rpg, turn based rpg
+fps, first-person shooter, first person shooter, shooting game, shooter, 1st person shooter
+tps, third-person shooter, third person shooter, 3rd person shooter, third-person action
+mmo, massively multiplayer online, mmo games, online multiplayer, multiplayer online
+moba, multiplayer online battle arena, moba games, arena battle, multiplayer arena
+rts, real-time strategy, real time strategy, strategy games, real-time tactics, tactics games
+mmorpg, massively multiplayer online role-playing game, online rpg, mmo rpg
+hack and slash, action rpg, action role-playing game, dungeon crawler, hack & slash, arpg
+survival, survival game, survival action, sandbox survival
+roguelike, roguelite, roguelike game, rogue-like, rogue-lite
+platformer, platform game, side-scroller, jumping game, platform-based game, parkour
+metroidvania, metroid-vania, metroid game, exploration platformer, search action
+card game, collectible card game, cccg, trading card game, tcg
+fighting game, brawler, versus game, one-on-one combat game
+puzzle game, puzzle-solving game, brain teaser, logic game, strategy puzzle, puzzle, puzzler
+single-player, single player, solo play, offline play, one-player
+casual game, pick-up-and-play, family-friendly, easy-to-play, simple gameplay, casual
+challenging, difficult, high skill, deep gameplay,
+hardcore, niche audience, niche
+party games, social games, multiplayer party, group games, casual multiplayer, party
+action-adventure, action adventure, adventure action, exploration-action
+beat 'em up, brawler, side-scrolling brawler, beatemup
+life simulation, life sim, virtual life, simulation game, social simulation
+vehicle simulation, driving simulator, flight simulator, car sim, driving game
+farming simulation, farming game, agriculture simulator, farm simulator, harvest game, harvest, agriculture
+management simulation, city-building, city-builder, business simulation
+tower defense, td, defense strategy, tower defense game, base defense
+tactical rpg, tactical role-playing game, tactical rpg, strategy rpg, turn-based strategy
+interactive story, story-driven, narrative game, narrative-driven, story game
+visual novel, vn, interactive fiction, text-based adventure, otome game, dating sim
+sports, sports game, football game, basketball game, soccer, baseball game, tennis game
+racing, car racing, vehicle racing, motorcycle racing, kart racing, street racing
+match-3, match three, tile-matching, puzzle matching
+hidden object, hidden object game, mystery search, seek and find, hidden objects
+idle game, clicker, incremental game, tap game, idle simulator
+rhythm game, music game, rhythm action, beat game, music-based
+dance game, rhythm-based dance, dance simulator, dancing game, dance rhythm
+social deduction, deduction game, multiplayer deception, detective game
+trivia, quiz game, quiz show, general knowledge, knowledge game, quiz
+
+# Game-related terms
+dlc, downloadable content, expansion, downloadable add-on, add-on, expansion pack
+expansion pack, dlc, add-on, downloadable expansion
+sandbox, open-world, open world, free roam, open world game, sandbox game, sandbox-style game, sandbox-style
+battle royale, br, last man standing, survival royale, free-for-all combat
+loot box, loot crate, mystery box, in-game loot, random loot
+season pass, battle pass, content pass, season content
+grind, grind game, grindfest, repetitive gameplay, repetitive
+microtransactions, in-game purchases, in-game store, premium content, paid content
+pay-to-win, pay to win, p2w, microtransactions affecting gameplay
+free-to-play, f2p, freemium, pay-to-play, free play, freemium
+pay-to-play, p2p, subscription game, subscription-based
+indie game, independent game, indie title, indie studio
+virtual reality, vr, vr game, immersive experience
+augmented reality, ar, ar game, mixed reality, mr game
+paid game, premium game, purchase, buy-to-play, 60 dollars, 60 bucks, fully priced, full price, full-price
+subscription, subscription model, game pass, subscription service, monthly fee
+real-time combat, action combat, live combat, real-time action
+
+# Artsyles
+pixel art, 8-bit, 16-bit, retro style, retro pixel, pixelated art
+hand-drawn, hand-drawn animation, drawn art, painted art
+low-poly, blocky, geometric, polygonal
+cel-shaded, cartoon style, comic style, animated look
+
+# Themes
+fantasy, medieval fantasy, high fantasy, epic fantasy, sword and sorcery
+sci-fi, science fiction, futuristic, space-themed, space opera, scifi, sci fi
+horror, survival horror, dark, creepy, gothic, psychological horror, thriller, mascot horror
+historical, ancient, medieval, victorian, renaissance, world war, modern warfare
+steampunk, victorian sci-fi, dieselpunk, fantasy sci-fi
+
+# Mechanics
+crafting, creation, build, recipe system, resource gathering, item creation
+leveling, leveling up, character progression, experience points, xp, exp, skill tree, upgrade system
+looting, loot, item drop, chest, treasure, items, rewards
+exploration, open world, sandbox exploration, world exploration, open environment, open air
+achievements, trophies, unlockables, milestones, awards, badges
+
+# UX
+hud, user interface, menu, overlay, heads-up display, ui, inventory screen
+accessibility, assistive mode
+controller, gamepad, joystick
+keyboard, mouse, keybindings
+
+# Multiplayer synonyms
+multiplayer, co-op, coop, cooperative play, multiplayer game, team play, team-based
+pvp, player versus player, player-vs-player, pvp combat, player against player
+pve, player versus environment, player-vs-environment, single-player co-op, co-op PvE
+online play, online multiplayer, online gaming, online co-op, internet multiplayer
+split-screen, local multiplayer, couch co-op, local play
+asynchronous multiplayer, non-real-time multiplayer, turn-based multiplayer, delayed play
+competitive, ranked mode, ranked play, tournament mode, esports, ranked, comp, tournament
+local multiplayer, split screen, couch multiplayer, local play, local co-op
+
+# Developers and Publishers
+valve, valve corporation, valve software
+cd projekt red, cd projekt, cdpr, the witcher studio, cyberpunk studio
+bethesda, bethesda softworks, bethesda game studios, bethesda games, elder scrolls studio
+ubisoft, ubisoft entertainment, ubisoft montreal, ubisoft paris, ubisoft studios, ubi
+square enix, squaresoft, square soft, sqenix, square enix japan, square, final fantasy studio, kingdom hearts studio
+ea, electronic arts, ea sports, ea games, ea studios
+rockstar, rockstar games, rockstar north, rockstar san diego, gta studio, red dead studio
+take-two, take-two interactive, 2k games, 2k, 2k studios
+capcom, capcom co, capcom co., capcom games, capcom studios
+naughty dog, naughty dog studios, uncharted studio, last of us studio
+insomniac, insomniac games, ratchet & clank studio, spider-man studio
+paradox, paradox interactive, paradox development studio
+focus entertainment, focus home interactive, focus studio
+obsidian, obsidian entertainment, obsidian studios
+remedy, remedy entertainment, control studio
+bandai namco, bandai namco entertainment, bandai, namco, namco bandai
+fromsoftware, from software, fromsoft, dark souls studio, bloodborne studio, elden ring studio
+sega, sega corporation, sega studios, sonic studio, yakuza studio
+devolver, devolver digital, devolver studio
+techland, techland games, techland studio, dying light studio, dead island studio
+deep silver, deep silver publishing, deep silver studios, saints row studio, metro studio
+tinybuild, tinybuild games, tinybuild studio, hello neighbor studio
+505, 505 games, 505 publishing, 505 studios, no man's sky studio
+frontier, frontier developments, frontier studio, planet coaster studio
+telltale, telltale games, telltale studios, walking dead studio studio
+tripwire, tripwire interactive, tripwire studio, killing floor studio
+thq nordic, thq, nordic games, thq studio
+bandai namco, bandai, namco, namco bandai
