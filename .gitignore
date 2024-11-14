@@ -163,5 +163,6 @@ cython_debug/
 
 config.py
 *.json
+*.csv
 models/*.bak_*
 startup.sh
