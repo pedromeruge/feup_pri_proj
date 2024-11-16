@@ -1,0 +1,1 @@
+Error: Invalid Solr response format. 'docs' key not found.
