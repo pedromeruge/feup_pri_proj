@@ -48,7 +48,7 @@ query1_stats:
 
 #get results for query2 from solr
 .PHONY: query2
-query1:
+query2:
 	scripts/query_solr.py --query queries/query2/query2.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
 	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
 
@@ -61,9 +61,9 @@ query2_stats:
 
 #get results for query3 from solr
 .PHONY: query3
-query1:
-	scripts/query_solr.py --query queries/query2/query2.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
-	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
+query3:
+	scripts/query_solr.py --query queries/query3/query3.json --uri http://localhost:8983/solr --collection videogames > queries/query3/results/query3.txt
+	cat queries/query3/results/query3.txt | scripts/solr2trec.py > queries/query3/results/query3_trec.txt
 
 #after defining trec file, get stats for query3
 .PHONY: query3_stats
@@ -74,9 +74,9 @@ query3_stats:
 
 #get results for query4 from solr
 .PHONY: query4
-query1:
-	scripts/query_solr.py --query queries/query2/query2.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
-	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
+query4:
+	scripts/query_solr.py --query queries/query4/query4.json --uri http://localhost:8983/solr --collection videogames > queries/query4/results/query4.txt
+	cat queries/query4/results/query4.txt | scripts/solr2trec.py > queries/query4/results/query4_trec.txt
 
 #after defining trec file, get stats for query4
 .PHONY: query4_stats
