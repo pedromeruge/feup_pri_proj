@@ -1,5 +1,5 @@
 {
-	"add-field-type": [
+    "add-field-type": [
         {
             "name": "stringField",
             "class": "solr.StrField"
@@ -17,164 +17,231 @@
             "class": "solr.DatePointField"
         },
         {
-            "name":"baseStringField",
-            "class":"solr.TextField",
-            "indexAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
+            "name": "baseStringField",
+            "class": "solr.TextField",
+            "indexAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
                 },
-                "filters":[
-                    {"class":"solr.LowerCaseFilterFactory"},
-                    {"class": "solr.ASCIIFoldingFilterFactory"},
-                    {"class": "solr.PatternReplaceFilterFactory",
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
                         "replacement": "$1$2",
                         "replace": "all"
                     },
-                    {"class": "solr.PatternReplaceFilterFactory",
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     }
                 ]
             },
-            "queryAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
+            "queryAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
                 },
-                "filters":[
-                    {"class":"solr.LowerCaseFilterFactory"},
-                    {"class": "solr.ASCIIFoldingFilterFactory"},
-                    {"class": "solr.PatternReplaceFilterFactory",
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
                         "replacement": "$1$2",
                         "replace": "all"
                     },
-                    {"class": "solr.PatternReplaceFilterFactory",
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
-                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                    {
+                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
+                    }
                 ]
             }
         },
         {
-            "name":"longTextualField",
-            "class":"solr.TextField",
-            "indexAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
+            "name": "longTextualField",
+            "class": "solr.TextField",
+            "indexAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
                 },
-                "filters":[
-                    {"class":"solr.LowerCaseFilterFactory"},
-                    {"class": "solr.ASCIIFoldingFilterFactory"},
-                    {"class": "solr.PatternReplaceFilterFactory",
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
                         "replacement": "$1$2",
                         "replace": "all"
                     },
-                    {"class": "solr.PatternReplaceFilterFactory",
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
-                    {"class": "solr.StopFilterFactory",
+                    {
+                        "class": "solr.StopFilterFactory",
                         "words": "lang/stopwords_en.txt",
-                        "ignoreCase":true
+                        "ignoreCase": true
                     },
-                    {"class": "solr.SynonymGraphFilterFactory",
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
                         "synonyms": "synonyms.txt",
                         "expand": true
                     },
-                    {"class": "solr.SnowballPorterFilterFactory", 
+                    {
+                        "class": "solr.SnowballPorterFilterFactory",
                         "language": "English"
+                    },
+                    {
+                        "class": "solr.ShingleFilterFactory",
+                        "minShingleSize": "2",
+                        "maxShingleSize": "3",
+                        "outputUnigrams": "true"
                     }
                 ]
             },
-            "queryAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
+            "queryAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
                 },
-                "filters":[
-                    {"class":"solr.LowerCaseFilterFactory"},
-                    {"class": "solr.ASCIIFoldingFilterFactory"},
-                    {"class": "solr.PatternReplaceFilterFactory",
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
                         "replacement": "$1$2",
                         "replace": "all"
                     },
-                    {"class": "solr.PatternReplaceFilterFactory",
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
-                    {"class": "solr.StopFilterFactory",
+                    {
+                        "class": "solr.StopFilterFactory",
                         "words": "lang/stopwords_en.txt",
-                        "ignoreCase":true
+                        "ignoreCase": true
                     },
-                    {"class": "solr.SynonymGraphFilterFactory",
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
                         "synonyms": "synonyms.txt",
                         "expand": true
                     },
-                    {"class": "solr.SnowballPorterFilterFactory", 
+                    {
+                        "class": "solr.SnowballPorterFilterFactory",
                         "language": "English"
                     },
-                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                    {
+                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
+                    }
                 ]
             }
         },
+        
+         
         {
-            "name":"specificNamesTextualField",
-            "class":"solr.TextField",
-            "indexAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
+            "name": "specificNamesTextualField",
+            "class": "solr.TextField",
+            "indexAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
                 },
-                "filters":[
-                    {"class":"solr.LowerCaseFilterFactory"},
-                    {"class": "solr.ASCIIFoldingFilterFactory"},
-                    {"class": "solr.PatternReplaceFilterFactory",
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
                         "replacement": "$1$2",
                         "replace": "all"
                     },
-                    {"class": "solr.PatternReplaceFilterFactory",
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
-
-                    {"class": "solr.SynonymGraphFilterFactory",
+                    {
+                        "class": "solr.WordDelimiterGraphFilterFactory",
+                        "generateWordParts": "1",
+                        "generateNumberParts": "1",
+                        "catenateWords": "1",
+                        "catenateNumbers": "1",
+                        "splitOnCaseChange": "1",
+                        "preserveOriginal": "1"
+                    },
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
                         "synonyms": "synonyms.txt",
                         "expand": true
                     },
-                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                    {
+                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
+                    }
                 ]
             },
-            "queryAnalyzer":{
-                "tokenizer":{
-                    "class":"solr.StandardTokenizerFactory"
+            "queryAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
                 },
-                "filters":[
-                    {"class":"solr.LowerCaseFilterFactory"},
-                    {"class": "solr.ASCIIFoldingFilterFactory"},
-                    {"class": "solr.PatternReplaceFilterFactory",
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
                         "replacement": "$1$2",
                         "replace": "all"
                     },
-                    {"class": "solr.PatternReplaceFilterFactory",
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
-
-                    {"class": "solr.SynonymGraphFilterFactory",
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
                         "synonyms": "synonyms.txt",
                         "expand": true
                     },
-                    {"class": "solr.RemoveDuplicatesTokenFilterFactory"}
+                    {
+                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
+                    }
                 ]
             }
         }
@@ -223,7 +290,7 @@
         {
             "name": "header_image",
             "type": "stringField"
-        },        
+        },
         {
             "name": "steam_description",
             "type": "longTextualField",
