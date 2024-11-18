@@ -1,0 +1,149 @@
+{
+	"add-field-type": [
+        {
+            "name": "stringField",
+            "class": "solr.StrField"
+        },
+        {
+            "name": "textField",
+            "class": "solr.TextField",
+            "indexAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                }
+            },
+            "queryAnalyzer":{
+                "tokenizer":{
+                    "class":"solr.StandardTokenizerFactory"
+                }
+            }
+        },
+        {
+            "name": "intField",
+            "class": "solr.IntPointField"
+        },
+        {
+            "name": "floatField",
+            "class": "solr.FloatPointField"
+        },
+        {
+            "name": "dateField",
+            "class": "solr.DatePointField"
+        }
+    ],
+
+    "add-field": [
+        {
+            "name": "name",
+            "type": "textField",
+            "indexed": true
+        },
+        {
+            "name": "required_age",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "price",
+            "type": "floatField",
+            "indexed": true
+        },
+        {
+            "name": "developers",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "publishers",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "genres",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "supported_languages",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "header_image",
+            "type": "stringField"
+        },        
+        {
+            "name": "steam_description",
+            "type": "textField",
+            "indexed": true
+        },
+        {
+            "name": "os",
+            "type": "stringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "video",
+            "type": "stringField"
+        },
+        {
+            "name": "avg_sales",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "steam_upvotes",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "steam_downvotes",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "categories",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "giantbomb_overview",
+            "type": "textField",
+            "indexed": true
+        },
+        {
+            "name": "characters",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "locations",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "specific_concepts",
+            "type": "textField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "ign_review_text",
+            "type": "textField",
+            "indexed": true
+        },
+        {
+            "name": "ign_score",
+            "type": "floatField",
+            "indexed": true
+        }
+    ]
+}

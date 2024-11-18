@@ -246,12 +246,12 @@
             }
         }
     ],
+    
     "add-field": [
         {
             "name": "name",
             "type": "specificNamesTextualField",
-            "indexed": true,
-            "required": true
+            "indexed": true
         },
         {
             "name": "required_age",

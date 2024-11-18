@@ -1,0 +1,9 @@
+{
+  "query": "story games with clever writing very emotional moments multiple endings voice acting cutscenes",
+  "params": {
+    "defType": "edismax",
+    "fl": "id,name,score",
+    "qf": "name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text",
+    "rows": 30
+  }
+}
