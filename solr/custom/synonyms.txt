@@ -1,4 +1,6 @@
 # Game genres and acronyms
+multiplayer, multi-player, multi player
+single-player, single player, singleplayer, solo play, offline play, one-player
 rpg, role-playing game, role playing game, roleplay, roleplaying, role-play, role-playing, rpgs, jrpg, turn-based rpg, turn based rpg
 fps, first-person shooter, first person shooter, shooting game, shooter, 1st person shooter
 tps, third-person shooter, third person shooter, 3rd person shooter, third-person action
@@ -14,7 +16,6 @@ metroidvania, metroid-vania, metroid game, exploration platformer, search action
 card game, collectible card game, cccg, trading card game, tcg
 fighting game, brawler, versus game, one-on-one combat game
 puzzle game, puzzle-solving game, brain teaser, logic game, strategy puzzle, puzzle, puzzler
-single-player, single player, solo play, offline play, one-player
 casual game, pick-up-and-play, family-friendly, easy-to-play, simple gameplay, casual
 challenging, difficult, high skill, deep gameplay,
 hardcore, niche audience, niche
@@ -54,7 +55,7 @@ pay-to-play, p2p, subscription game, subscription-based
 indie game, independent game, indie title, indie studio
 virtual reality, vr, vr game, immersive experience
 augmented reality, ar, ar game, mixed reality, mr game
-paid game, premium game, purchase, buy-to-play, 60 dollars, 60 bucks, fully priced, full price, full-price
+paid game, premium game, purchase, buy-to-play, 60 dollars, 60 euros, 60 bucks, fully priced, full price, full-price
 subscription, subscription model, game pass, subscription service, monthly fee
 real-time combat, action combat, live combat, real-time action
 
@@ -87,7 +88,7 @@ keyboard, mouse, keybindings
 # Multiplayer synonyms
 multiplayer, co-op, coop, cooperative play, multiplayer game, team play, team-based
 pvp, player versus player, player-vs-player, pvp combat, player against player
-pve, player versus environment, player-vs-environment, single-player co-op, co-op PvE
+pve, player versus environment, player-vs-environment, co-op PvE
 online play, online multiplayer, online gaming, online co-op, internet multiplayer
 split-screen, local multiplayer, couch co-op, local play
 asynchronous multiplayer, non-real-time multiplayer, turn-based multiplayer, delayed play
