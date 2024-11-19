@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 174,
+    "params": {
+      "json": "{\"query\": \"Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4852,
+    "start": 0,
+    "maxScore": 21.767942,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Nightmares from the Deep: The Cursed Heart",
+        "id": "259740",
+        "score": 21.767942
+      },
+      {
+        "name": "Grim Legends 2: Song of the Dark Swan",
+        "id": "279800",
+        "score": 20.791374
+      },
+      {
+        "name": "Grim Legends: The Forsaken Bride",
+        "id": "284850",
+        "score": 17.508842
+      },
+      {
+        "name": "Abyss: The Wraiths of Eden",
+        "id": "284710",
+        "score": 16.25555
+      },
+      {
+        "name": "Kind Words (lo fi chill beats to write to)",
+        "id": "1070710",
+        "score": 12.6838255
+      },
+      {
+        "name": "Townscaper",
+        "id": "1291340",
+        "score": 11.516428
+      },
+      {
+        "name": "Cozy Grove",
+        "id": "1458100",
+        "score": 10.373901
+      },
+      {
+        "name": "Potion Permit",
+        "id": "1337760",
+        "score": 9.756592
+      },
+      {
+        "name": "Aircar",
+        "id": "1073390",
+        "score": 9.124546
+      },
+      {
+        "name": "Tengami",
+        "id": "299680",
+        "score": 8.461938
+      },
+      {
+        "name": "Calico",
+        "id": "1112890",
+        "score": 8.194323
+      },
+      {
+        "name": "Microcosmum: survival of cells",
+        "id": "386260",
+        "score": 8.0921135
+      },
+      {
+        "name": "Eufloria HD",
+        "id": "221180",
+        "score": 8.080314
+      },
+      {
+        "name": "SKYE",
+        "id": "1214360",
+        "score": 8.078828
+      },
+      {
+        "name": "Zup! Zero 2",
+        "id": "658550",
+        "score": 8.043522
+      },
+      {
+        "name": "Zup! F",
+        "id": "601220",
+        "score": 8.000688
+      },
+      {
+        "name": "Zup! 6",
+        "id": "566160",
+        "score": 8.000688
+      },
+      {
+        "name": "Zup! Zero",
+        "id": "610360",
+        "score": 8.000688
+      },
+      {
+        "name": "Zup! S",
+        "id": "617670",
+        "score": 8.000688
+      },
+      {
+        "name": "Zup! 3",
+        "id": "575640",
+        "score": 8.000688
+      },
+      {
+        "name": "Zup! 5",
+        "id": "645090",
+        "score": 8.000688
+      },
+      {
+        "name": "Zup! 8",
+        "id": "799070",
+        "score": 7.958314
+      },
+      {
+        "name": "The Good Time Garden",
+        "id": "1200860",
+        "score": 7.9195414
+      },
+      {
+        "name": "My Little Farmies",
+        "id": "789100",
+        "score": 7.885872
+      },
+      {
+        "name": "Zup! X",
+        "id": "508900",
+        "score": 7.874922
+      },
+      {
+        "name": "Coloring Pixels",
+        "id": "897330",
+        "score": 7.874922
+      },
+      {
+        "name": "Zup!",
+        "id": "533300",
+        "score": 7.8338885
+      },
+      {
+        "name": "NEKOPALIVE",
+        "id": "469990",
+        "score": 7.8097634
+      },
+      {
+        "name": "Spirits",
+        "id": "210170",
+        "score": 7.7531137
+      },
+      {
+        "name": "SpaceEngine",
+        "id": "314650",
+        "score": 7.738989
+      }
+    ]
+  }
+}
