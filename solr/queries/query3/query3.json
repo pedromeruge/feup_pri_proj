@@ -1,5 +1,5 @@
 {
-  "query": "story games with clever writing very emotional moments multiple endings voice acting cutscenes",
+  "query": "Story games with clever writing very emotional moments multiple endings voice acting cutscenes",
   "params": {
     "defType": "edismax",
     "fl": "id,name,score",

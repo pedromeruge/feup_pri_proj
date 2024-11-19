@@ -1,5 +1,5 @@
 {
-  "query": "games with optimization resource management time management routing organization scheduling Windows support in French",
+  "query": "Games with optimization resource management time management routing organization scheduling Windows support in French",
   "params": {
     "defType": "edismax",
     "fl": "id,name,score",

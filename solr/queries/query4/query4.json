@@ -1,5 +1,5 @@
 {
-  "query": "single-player action games with IGN score 8 or higher, focus on combat difficult punishing fights against enemies",
+  "query": "Single-player action games fast-paced combat difficult punishing fights against enemies",
   "params": {
     "defType": "edismax",
     "fl": "id,name,score",

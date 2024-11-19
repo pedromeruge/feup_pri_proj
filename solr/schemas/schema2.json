@@ -10,12 +10,28 @@
             "indexAnalyzer":{
                 "tokenizer":{
                     "class":"solr.StandardTokenizerFactory"
-                }
+                },
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    }
+                ]
             },
             "queryAnalyzer":{
                 "tokenizer":{
                     "class":"solr.StandardTokenizerFactory"
-                }
+                },
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    }
+                ]
             }
         },
         {

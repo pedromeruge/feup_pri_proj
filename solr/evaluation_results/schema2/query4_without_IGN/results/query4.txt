@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 33,
+    "params": {
+      "json": "{\"query\": \"Single-player action games fast-paced combat difficult punishing fights against enemies\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4955,
+    "start": 0,
+    "maxScore": 9.955553,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Tumblestone",
+        "id": "269710",
+        "score": 9.955553
+      },
+      {
+        "name": "Skyforge",
+        "id": "414530",
+        "score": 9.708005
+      },
+      {
+        "name": "Enemy Front",
+        "id": "256190",
+        "score": 8.688531
+      },
+      {
+        "name": "Defiance 2050",
+        "id": "743090",
+        "score": 8.503014
+      },
+      {
+        "name": "Warhammer 40,000: Regicide",
+        "id": "322910",
+        "score": 8.177521
+      },
+      {
+        "name": "Project Wingman",
+        "id": "895870",
+        "score": 8.021309
+      },
+      {
+        "name": "DRAGON BALL Z: KAKAROT",
+        "id": "851850",
+        "score": 7.973615
+      },
+      {
+        "name": "Ember Strike",
+        "id": "374670",
+        "score": 7.967201
+      },
+      {
+        "name": "Viking: Battle for Asgard",
+        "id": "211160",
+        "score": 7.7002606
+      },
+      {
+        "name": "Leafling",
+        "id": "1457150",
+        "score": 7.6092396
+      },
+      {
+        "name": "Serious Sam 3: BFE",
+        "id": "41070",
+        "score": 7.5465446
+      },
+      {
+        "name": "VERSUS SQUAD",
+        "id": "471330",
+        "score": 7.303339
+      },
+      {
+        "name": "CrossCode",
+        "id": "368340",
+        "score": 7.2854886
+      },
+      {
+        "name": "Hero Siege",
+        "id": "269210",
+        "score": 7.274044
+      },
+      {
+        "name": "Orbital Gear",
+        "id": "298520",
+        "score": 7.2348485
+      },
+      {
+        "name": "ORION: Prelude",
+        "id": "104900",
+        "score": 7.221111
+      },
+      {
+        "name": "Janosik - Highlander Precision Platformer",
+        "id": "1412170",
+        "score": 7.148676
+      },
+      {
+        "name": "RWBY: Grimm Eclipse",
+        "id": "418340",
+        "score": 7.1319265
+      },
+      {
+        "name": "Soccer Manager",
+        "id": "438600",
+        "score": 7.0912366
+      },
+      {
+        "name": "Steel Storm: Burning Retribution",
+        "id": "96200",
+        "score": 7.0848937
+      },
+      {
+        "name": "Ashen",
+        "id": "649950",
+        "score": 7.075694
+      },
+      {
+        "name": "Katana ZERO",
+        "id": "460950",
+        "score": 7.0105443
+      },
+      {
+        "name": "Cubemen",
+        "id": "207250",
+        "score": 6.9828277
+      },
+      {
+        "name": "50 years",
+        "id": "502740",
+        "score": 6.928701
+      },
+      {
+        "name": "Incoming Forces",
+        "id": "283390",
+        "score": 6.90788
+      },
+      {
+        "name": "Apotheon",
+        "id": "208750",
+        "score": 6.848984
+      },
+      {
+        "name": "Unsung Warriors - Prologue",
+        "id": "959080",
+        "score": 6.842908
+      },
+      {
+        "name": "Cossacks: European Wars",
+        "id": "4880",
+        "score": 6.83863
+      },
+      {
+        "name": "Outland",
+        "id": "305050",
+        "score": 6.8342543
+      },
+      {
+        "name": "Splitgate",
+        "id": "677620",
+        "score": 6.8207912
+      }
+    ]
+  }
+}

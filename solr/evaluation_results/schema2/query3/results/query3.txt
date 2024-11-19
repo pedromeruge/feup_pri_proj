@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 72,
+    "params": {
+      "json": "{\"query\": \"Story games with clever writing very emotional moments multiple endings voice acting cutscenes\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4812,
+    "start": 0,
+    "maxScore": 10.696387,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Torment: Tides of Numenera",
+        "id": "272270",
+        "score": 10.696387
+      },
+      {
+        "name": "Final Fantasy IV (3D Remake)",
+        "id": "312750",
+        "score": 9.416859
+      },
+      {
+        "name": "Long Live The Queen",
+        "id": "251990",
+        "score": 8.664751
+      },
+      {
+        "name": "STASIS",
+        "id": "380150",
+        "score": 8.424298
+      },
+      {
+        "name": "Lucid9: Inciting Incident",
+        "id": "439940",
+        "score": 8.293619
+      },
+      {
+        "name": "Our End of the World",
+        "id": "703700",
+        "score": 8.068593
+      },
+      {
+        "name": "Kathy Rain",
+        "id": "370910",
+        "score": 7.9651637
+      },
+      {
+        "name": "Whispers of a Machine",
+        "id": "631570",
+        "score": 7.903274
+      },
+      {
+        "name": "Kaptain Brawe: A Brawe New World",
+        "id": "65080",
+        "score": 7.518192
+      },
+      {
+        "name": "FINAL FANTASY IV",
+        "id": "1173800",
+        "score": 7.491639
+      },
+      {
+        "name": "Fearless Fantasy",
+        "id": "282100",
+        "score": 7.2560296
+      },
+      {
+        "name": "The Legend of Heroes: Trails of Cold Steel",
+        "id": "538680",
+        "score": 7.2235947
+      },
+      {
+        "name": "The Stanley Parable",
+        "id": "221910",
+        "score": 7.2226954
+      },
+      {
+        "name": "CONCLUSE",
+        "id": "826230",
+        "score": 7.124895
+      },
+      {
+        "name": "Oxenfree",
+        "id": "388880",
+        "score": 7.025071
+      },
+      {
+        "name": "The Dark Pictures Anthology: Man of Medan",
+        "id": "939850",
+        "score": 7.023882
+      },
+      {
+        "name": "Ultimate Custom Night",
+        "id": "871720",
+        "score": 7.0069323
+      },
+      {
+        "name": "MIND: Path to Thalamus Enhanced Edition",
+        "id": "296070",
+        "score": 6.978823
+      },
+      {
+        "name": "CLANNAD",
+        "id": "324160",
+        "score": 6.9742312
+      },
+      {
+        "name": "Thronebreaker: The Witcher Tales",
+        "id": "973760",
+        "score": 6.9719915
+      },
+      {
+        "name": "Lighthouse Keeper",
+        "id": "1469370",
+        "score": 6.896831
+      },
+      {
+        "name": "Jazzpunk: Director's Cut",
+        "id": "250260",
+        "score": 6.8775826
+      },
+      {
+        "name": "Miracle Snack Shop",
+        "id": "995460",
+        "score": 6.807739
+      },
+      {
+        "name": "WWE 2K19",
+        "id": "817130",
+        "score": 6.8041096
+      },
+      {
+        "name": "Late Shift",
+        "id": "584980",
+        "score": 6.7182913
+      },
+      {
+        "name": "Getting Over It with Bennett Foddy",
+        "id": "240720",
+        "score": 6.663703
+      },
+      {
+        "name": "Life is Strange: True Colors",
+        "id": "936790",
+        "score": 6.649063
+      },
+      {
+        "name": "Marie's Room",
+        "id": "648390",
+        "score": 6.6255226
+      },
+      {
+        "name": "Alpha Polaris : A Horror Adventure Game",
+        "id": "405780",
+        "score": 6.5106306
+      },
+      {
+        "name": "Before Your Eyes",
+        "id": "1082430",
+        "score": 6.501089
+      }
+    ]
+  }
+}

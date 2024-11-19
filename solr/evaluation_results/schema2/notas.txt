@@ -1,0 +1,3 @@
+Resultados para schema base 
+Schema: com standard tokenizer, filtros: lowercase e ascii).
+Query: letras grandes e pequenas, todas as palavras estão bem escritas

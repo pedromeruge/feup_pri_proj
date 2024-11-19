@@ -81,7 +81,7 @@ query4:
 #after defining trec file, get stats for query4
 .PHONY: query4_stats
 query4_stats:
-	cat queries/query4/query_qrels.txt | scripts/qrels2trec.py > queries/query4/query4_qrels_trec.txt
+	cat queries/query4/query4_qrels.txt | scripts/qrels2trec.py > queries/query4/query4_qrels_trec.txt
 	trec_eval queries/query4/query4_qrels_trec.txt queries/query4/results/query4_trec.txt > queries/query4/results/query4_eval_res.txt
 	cat queries/query4/results/query4_trec.txt | ./scripts/plot_pr.py --qrels queries/query4/query4_qrels_trec.txt --output queries/query4/results/query4_prec_rec.png
 
