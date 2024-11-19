@@ -32,15 +32,14 @@
                     },
                     {
                         "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
-                        "replacement": "$1$2",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
+                    },
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms_gaming.txt",
+                        "expand": true
                     }
                 ]
             },
@@ -57,15 +56,14 @@
                     },
                     {
                         "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
-                        "replacement": "$1$2",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
+                    },
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms_gaming.txt",
+                        "expand": true
                     },
                     {
                         "class": "solr.RemoveDuplicatesTokenFilterFactory"
@@ -89,35 +87,24 @@
                     },
                     {
                         "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
-                        "replacement": "$1$2",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
                     {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms_gaming.txt",
+                        "expand": true
+                    },
+                    {
                         "class": "solr.StopFilterFactory",
-                        "words": "lang/stopwords_en.txt",
+                        "words": "stopwords_custom.txt",
                         "ignoreCase": true
                     },
                     {
                         "class": "solr.SynonymGraphFilterFactory",
-                        "synonyms": "synonyms.txt",
+                        "synonyms": "lemmas_spacy.txt",
                         "expand": true
-                    },
-                    {
-                        "class": "solr.SnowballPorterFilterFactory",
-                        "language": "English"
-                    },
-                    {
-                        "class": "solr.ShingleFilterFactory",
-                        "minShingleSize": "2",
-                        "maxShingleSize": "3",
-                        "outputUnigrams": "true"
                     }
                 ]
             },
@@ -134,29 +121,14 @@
                     },
                     {
                         "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
-                        "replacement": "$1$2",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
                     {
                         "class": "solr.StopFilterFactory",
-                        "words": "lang/stopwords_en.txt",
+                        "words": "stopwords_custom.txt",
                         "ignoreCase": true
-                    },
-                    {
-                        "class": "solr.SynonymGraphFilterFactory",
-                        "synonyms": "synonyms.txt",
-                        "expand": true
-                    },
-                    {
-                        "class": "solr.SnowballPorterFilterFactory",
-                        "language": "English"
                     },
                     {
                         "class": "solr.RemoveDuplicatesTokenFilterFactory"
@@ -182,32 +154,14 @@
                     },
                     {
                         "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
-                        "replacement": "$1$2",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
                     },
                     {
-                        "class": "solr.WordDelimiterGraphFilterFactory",
-                        "generateWordParts": "1",
-                        "generateNumberParts": "1",
-                        "catenateWords": "1",
-                        "catenateNumbers": "1",
-                        "splitOnCaseChange": "1",
-                        "preserveOriginal": "1"
-                    },
-                    {
                         "class": "solr.SynonymGraphFilterFactory",
-                        "synonyms": "synonyms.txt",
+                        "synonyms": "synonyms_gaming.txt",
                         "expand": true
-                    },
-                    {
-                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
                     }
                 ]
             },
@@ -224,20 +178,9 @@
                     },
                     {
                         "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "([a-zA-Z]+)-([a-zA-Z]+)",
-                        "replacement": "$1$2",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
                         "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
                         "replacement": "$1",
                         "replace": "all"
-                    },
-                    {
-                        "class": "solr.SynonymGraphFilterFactory",
-                        "synonyms": "synonyms.txt",
-                        "expand": true
                     },
                     {
                         "class": "solr.RemoveDuplicatesTokenFilterFactory"

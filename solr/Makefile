@@ -4,13 +4,8 @@ SHELL := /bin/bash
 .PHONY: help
 help:
 	@echo "Commands:"
-	@echo "style      : runs style formatting."
 	@echo "down       : stops all running services, removes containers and volumes."
 	@echo "up         : start Docker daemon and Solr."
-	@echo "schema     : update schema using docker/data/schema.json."
-	@echo "populate   : populate Solr using docker/data/data.json."
-	@echo "trec_eval  : download trec_eval source code and compile it."
-	@echo "test       : run unit tests."
 
 .PHONY: style
 style:
@@ -27,7 +22,10 @@ down:
 .PHONY: up
 up:
 	docker run -p 8983:8983 --name pri_solr -v ${PWD}:/data -d solr:9 solr-precreate videogames
-	sleep 4
+	sleep 6
+	docker exec -it pri_solr cp /data/custom/synonyms_gaming.txt /var/solr/data/videogames/conf/
+	docker exec -it pri_solr cp /data/custom/stopwords_custom.txt /var/solr/data/videogames/conf/
+	docker exec -it pri_solr cp /data/lemmatizers/lemmas_spacy.txt /var/solr/data/videogames/conf/
 	curl -X POST -H 'Content-type:application/json' \
 	--data-binary "@${PWD}/schemas/schema.json" \
 	http://localhost:8983/solr/videogames/schema
