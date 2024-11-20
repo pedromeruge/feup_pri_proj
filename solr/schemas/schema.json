@@ -17,61 +17,6 @@
             "class": "solr.DatePointField"
         },
         {
-            "name": "baseStringField",
-            "class": "solr.TextField",
-            "indexAnalyzer": {
-                "tokenizer": {
-                    "class": "solr.StandardTokenizerFactory"
-                },
-                "filters": [
-                    {
-                        "class": "solr.LowerCaseFilterFactory"
-                    },
-                    {
-                        "class": "solr.ASCIIFoldingFilterFactory"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
-                        "replacement": "$1",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.SynonymGraphFilterFactory",
-                        "synonyms": "synonyms_gaming.txt",
-                        "expand": true
-                    }
-                ]
-            },
-            "queryAnalyzer": {
-                "tokenizer": {
-                    "class": "solr.StandardTokenizerFactory"
-                },
-                "filters": [
-                    {
-                        "class": "solr.LowerCaseFilterFactory"
-                    },
-                    {
-                        "class": "solr.ASCIIFoldingFilterFactory"
-                    },
-                    {
-                        "class": "solr.PatternReplaceFilterFactory",
-                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
-                        "replacement": "$1",
-                        "replace": "all"
-                    },
-                    {
-                        "class": "solr.SynonymGraphFilterFactory",
-                        "synonyms": "synonyms_gaming.txt",
-                        "expand": true
-                    },
-                    {
-                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
-                    }
-                ]
-            }
-        },
-        {
             "name": "longTextualField",
             "class": "solr.TextField",
             "indexAnalyzer": {
@@ -220,13 +165,13 @@
         },
         {
             "name": "genres",
-            "type": "baseStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
         {
             "name": "supported_languages",
-            "type": "baseStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
@@ -271,7 +216,7 @@
         },
         {
             "name": "categories",
-            "type": "baseStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
@@ -294,7 +239,7 @@
         },
         {
             "name": "specific_concepts",
-            "type": "baseStringField",
+            "type": "specificNamesTextualField",
             "indexed": true,
             "multiValued": true
         },
