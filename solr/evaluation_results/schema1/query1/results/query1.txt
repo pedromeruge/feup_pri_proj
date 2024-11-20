@@ -1,7 +1,7 @@
 {
   "responseHeader": {
     "status": 0,
-    "QTime": 174,
+    "QTime": 161,
     "params": {
       "json": "{\"query\": \"Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
     }
@@ -9,58 +9,18 @@
   "response": {
     "numFound": 4852,
     "start": 0,
-    "maxScore": 21.767942,
+    "maxScore": 9.64537,
     "numFoundExact": true,
     "docs": [
       {
-        "name": "Nightmares from the Deep: The Cursed Heart",
-        "id": "259740",
-        "score": 21.767942
-      },
-      {
-        "name": "Grim Legends 2: Song of the Dark Swan",
-        "id": "279800",
-        "score": 20.791374
-      },
-      {
-        "name": "Grim Legends: The Forsaken Bride",
-        "id": "284850",
-        "score": 17.508842
-      },
-      {
-        "name": "Abyss: The Wraiths of Eden",
-        "id": "284710",
-        "score": 16.25555
-      },
-      {
         "name": "Kind Words (lo fi chill beats to write to)",
         "id": "1070710",
-        "score": 12.6838255
+        "score": 9.64537
       },
       {
         "name": "Townscaper",
         "id": "1291340",
-        "score": 11.516428
-      },
-      {
-        "name": "Cozy Grove",
-        "id": "1458100",
-        "score": 10.373901
-      },
-      {
-        "name": "Potion Permit",
-        "id": "1337760",
-        "score": 9.756592
-      },
-      {
-        "name": "Aircar",
-        "id": "1073390",
-        "score": 9.124546
-      },
-      {
-        "name": "Tengami",
-        "id": "299680",
-        "score": 8.461938
+        "score": 8.286218
       },
       {
         "name": "Calico",
@@ -68,99 +28,139 @@
         "score": 8.194323
       },
       {
+        "name": "Sweet Lily Dreams",
+        "id": "300540",
+        "score": 7.606222
+      },
+      {
+        "name": "Cozy Grove",
+        "id": "1458100",
+        "score": 7.4730964
+      },
+      {
+        "name": "Potion Permit",
+        "id": "1337760",
+        "score": 6.9547915
+      },
+      {
+        "name": "Resident Evil: Operation Raccoon City",
+        "id": "209100",
+        "score": 6.683226
+      },
+      {
+        "name": "Cthulhu Saves the World",
+        "id": "107310",
+        "score": 6.674969
+      },
+      {
+        "name": "Obduction",
+        "id": "306760",
+        "score": 6.2950463
+      },
+      {
+        "name": "Gang Beasts",
+        "id": "285900",
+        "score": 5.863343
+      },
+      {
+        "name": "Spooky's Jump Scare Mansion",
+        "id": "356670",
+        "score": 5.691205
+      },
+      {
+        "name": "Dungeons of Dredmor",
+        "id": "98800",
+        "score": 5.677492
+      },
+      {
+        "name": "Clover Tale",
+        "id": "463060",
+        "score": 5.6297603
+      },
+      {
+        "name": "Aircar",
+        "id": "1073390",
+        "score": 5.6091776
+      },
+      {
+        "name": "The Secret of Tremendous Corporation",
+        "id": "380140",
+        "score": 5.566435
+      },
+      {
+        "name": "Adventure Escape Mysteries",
+        "id": "1141020",
+        "score": 5.4832773
+      },
+      {
+        "name": "Lamp Head",
+        "id": "603030",
+        "score": 5.3060474
+      },
+      {
+        "name": "Cute Honey 2",
+        "id": "1399370",
+        "score": 5.2883782
+      },
+      {
+        "name": "Breath of Death VII",
+        "id": "107300",
+        "score": 5.204632
+      },
+      {
+        "name": "Serious Sam: The Random Encounter",
+        "id": "201480",
+        "score": 5.1318493
+      },
+      {
+        "name": "Cute Honey",
+        "id": "1347430",
+        "score": 5.0937047
+      },
+      {
+        "name": "The Cat and the Coup",
+        "id": "95700",
+        "score": 5.071386
+      },
+      {
         "name": "Microcosmum: survival of cells",
         "id": "386260",
-        "score": 8.0921135
+        "score": 5.0483465
       },
       {
-        "name": "Eufloria HD",
-        "id": "221180",
-        "score": 8.080314
+        "name": "Tengami",
+        "id": "299680",
+        "score": 5.040906
       },
       {
-        "name": "SKYE",
-        "id": "1214360",
-        "score": 8.078828
+        "name": "Rec Room",
+        "id": "471710",
+        "score": 5.037567
       },
       {
-        "name": "Zup! Zero 2",
-        "id": "658550",
-        "score": 8.043522
+        "name": "Ragnarok Clicker",
+        "id": "493370",
+        "score": 5.028773
       },
       {
-        "name": "Zup! F",
-        "id": "601220",
-        "score": 8.000688
-      },
-      {
-        "name": "Zup! 6",
-        "id": "566160",
-        "score": 8.000688
-      },
-      {
-        "name": "Zup! Zero",
-        "id": "610360",
-        "score": 8.000688
-      },
-      {
-        "name": "Zup! S",
-        "id": "617670",
-        "score": 8.000688
-      },
-      {
-        "name": "Zup! 3",
-        "id": "575640",
-        "score": 8.000688
-      },
-      {
-        "name": "Zup! 5",
-        "id": "645090",
-        "score": 8.000688
-      },
-      {
-        "name": "Zup! 8",
-        "id": "799070",
-        "score": 7.958314
-      },
-      {
-        "name": "The Good Time Garden",
-        "id": "1200860",
-        "score": 7.9195414
+        "name": "Expeditions: Rome",
+        "id": "987840",
+        "score": 4.932823
       },
       {
         "name": "My Little Farmies",
         "id": "789100",
-        "score": 7.885872
+        "score": 4.927443
       },
       {
-        "name": "Zup! X",
-        "id": "508900",
-        "score": 7.874922
+        "name": "Out of Space",
+        "id": "400080",
+        "score": 4.904447
       },
       {
-        "name": "Coloring Pixels",
-        "id": "897330",
-        "score": 7.874922
-      },
-      {
-        "name": "Zup!",
-        "id": "533300",
-        "score": 7.8338885
-      },
-      {
-        "name": "NEKOPALIVE",
-        "id": "469990",
-        "score": 7.8097634
-      },
-      {
-        "name": "Spirits",
-        "id": "210170",
-        "score": 7.7531137
-      },
-      {
-        "name": "SpaceEngine",
-        "id": "314650",
-        "score": 7.738989
+        "name": "Wildermyth",
+        "id": "763890",
+        "score": 4.8938746
       }
     ]
   }

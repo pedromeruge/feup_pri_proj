@@ -1,7 +1,7 @@
 {
   "responseHeader": {
     "status": 0,
-    "QTime": 93,
+    "QTime": 13,
     "params": {
       "json": "{\"query\": \"Games with optimization resource management time management routing organization scheduling Windows support in French\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
     }
