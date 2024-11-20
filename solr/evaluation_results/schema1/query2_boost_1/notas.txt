@@ -1,0 +1,7 @@
+Resultados para schema1
+Schema: schema 1 final
+Query: letras grandes e pequenas, todas as palavras estão bem escritas
+
+Weights:      "qf": "name developers publishers genres^2 supported_languages^5 steam_description^1.5 os^5 categories^2 giantbomb_overview^1.5 characters locations specific_concepts^2 ign_review_text^1.5"
+
+

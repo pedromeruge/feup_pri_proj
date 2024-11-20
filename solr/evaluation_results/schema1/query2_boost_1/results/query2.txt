@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 55,
+    "params": {
+      "json": "{\"query\": \"Games with optimization resource management time management routing organization scheduling Windows support in French\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres^2 supported_languages steam_description^1.5 os release_date categories^2 giantbomb_overview^1.5 characters locations specific_concepts^2 ign_review_text^1.5\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4735,
+    "start": 0,
+    "maxScore": 20.514513,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Tropico 4",
+        "id": "57690",
+        "score": 20.514513
+      },
+      {
+        "name": "The Wandering Village",
+        "id": "1121640",
+        "score": 20.205935
+      },
+      {
+        "name": "Cursed Treasure 2",
+        "id": "643960",
+        "score": 19.582783
+      },
+      {
+        "name": "They Are Billions",
+        "id": "644930",
+        "score": 19.063217
+      },
+      {
+        "name": "Crying Suns",
+        "id": "873940",
+        "score": 18.786167
+      },
+      {
+        "name": "Train Valley",
+        "id": "353640",
+        "score": 18.231482
+      },
+      {
+        "name": "Creeper World 3: Arc Eternal",
+        "id": "280220",
+        "score": 18.196943
+      },
+      {
+        "name": "Automation Empire",
+        "id": "1112790",
+        "score": 17.712212
+      },
+      {
+        "name": "Dune: Spice Wars",
+        "id": "1605220",
+        "score": 17.645775
+      },
+      {
+        "name": "MachiaVillain",
+        "id": "555510",
+        "score": 17.458302
+      },
+      {
+        "name": "Citystate",
+        "id": "774351",
+        "score": 17.458302
+      },
+      {
+        "name": "Cities: Skylines",
+        "id": "255710",
+        "score": 17.195662
+      },
+      {
+        "name": "Startup Company",
+        "id": "606800",
+        "score": 17.173676
+      },
+      {
+        "name": "Cossacks 3",
+        "id": "333420",
+        "score": 17.161543
+      },
+      {
+        "name": "Distant Worlds: Universe",
+        "id": "261470",
+        "score": 17.024574
+      },
+      {
+        "name": "Project Hospital",
+        "id": "868360",
+        "score": 17.012869
+      },
+      {
+        "name": "Another Brick in The Mall",
+        "id": "521150",
+        "score": 17.012869
+      },
+      {
+        "name": "My Little Farmies",
+        "id": "789100",
+        "score": 16.788372
+      },
+      {
+        "name": "Judgment: Apocalypse Survival Simulation",
+        "id": "455980",
+        "score": 16.668427
+      },
+      {
+        "name": "Europa Universalis IV",
+        "id": "236850",
+        "score": 16.454594
+      },
+      {
+        "name": "Rebuild 3: Gangs of Deadsville",
+        "id": "257170",
+        "score": 16.189531
+      },
+      {
+        "name": "The Universim",
+        "id": "352720",
+        "score": 16.189531
+      },
+      {
+        "name": "Victoria II",
+        "id": "42960",
+        "score": 16.013132
+      },
+      {
+        "name": "NGU INDUSTRIES",
+        "id": "1433990",
+        "score": 15.7840805
+      },
+      {
+        "name": "AI War 2",
+        "id": "573410",
+        "score": 15.698107
+      },
+      {
+        "name": "Victoria 3",
+        "id": "529340",
+        "score": 15.685199
+      },
+      {
+        "name": "Startopia",
+        "id": "243040",
+        "score": 15.621774
+      },
+      {
+        "name": "Driftland: The Magic Revival",
+        "id": "718650",
+        "score": 15.534899
+      },
+      {
+        "name": "Empires of the Undergrowth",
+        "id": "463530",
+        "score": 15.380565
+      },
+      {
+        "name": "Evil Genius 2: World Domination",
+        "id": "700600",
+        "score": 15.380565
+      }
+    ]
+  }
+}

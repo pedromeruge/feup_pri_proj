@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 29,
+    "params": {
+      "json": "{\"query\": \"Story games with clever writing very emotional moments multiple endings voice acting cutscenes\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^2 supported_languages^5 steam_description^1.5 os^5 categories^2 giantbomb_overview^1.5 characters locations specific_concepts^2 ign_review_text^1.5\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4105,
+    "start": 0,
+    "maxScore": 15.401392,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Dragon Age: Origins - Ultimate Edition",
+        "id": "47810",
+        "score": 15.401392
+      },
+      {
+        "name": "Persona 4 Golden",
+        "id": "1113000",
+        "score": 15.069962
+      },
+      {
+        "name": "Persona 5 Royal",
+        "id": "1687950",
+        "score": 15.069962
+      },
+      {
+        "name": "Life is Strange: True Colors",
+        "id": "936790",
+        "score": 14.458547
+      },
+      {
+        "name": "Of Bird and Cage",
+        "id": "523770",
+        "score": 14.309907
+      },
+      {
+        "name": "Detroit: Become Human",
+        "id": "1222140",
+        "score": 13.881774
+      },
+      {
+        "name": "Heavy Rain",
+        "id": "960910",
+        "score": 13.881774
+      },
+      {
+        "name": "Tell Me Why",
+        "id": "1180660",
+        "score": 13.881774
+      },
+      {
+        "name": "one night, hot springs",
+        "id": "917680",
+        "score": 13.881774
+      },
+      {
+        "name": "CLANNAD",
+        "id": "324160",
+        "score": 13.7446995
+      },
+      {
+        "name": "Grimm's Hollow",
+        "id": "1170880",
+        "score": 13.610306
+      },
+      {
+        "name": "Emily is Away <3",
+        "id": "978460",
+        "score": 13.349253
+      },
+      {
+        "name": "Depression Quest",
+        "id": "270170",
+        "score": 13.349253
+      },
+      {
+        "name": "Neo Cab",
+        "id": "794540",
+        "score": 13.098024
+      },
+      {
+        "name": "Nobody - The Turnaround",
+        "id": "1810580",
+        "score": 13.098024
+      },
+      {
+        "name": "I Have No Mouth, and I Must Scream",
+        "id": "245390",
+        "score": 13.035024
+      },
+      {
+        "name": "2064: Read Only Memories",
+        "id": "330820",
+        "score": 12.856077
+      },
+      {
+        "name": "Coffee Talk",
+        "id": "914800",
+        "score": 12.622908
+      },
+      {
+        "name": "The Forgotten Ones",
+        "id": "314280",
+        "score": 11.770382
+      },
+      {
+        "name": "Long Live The Queen",
+        "id": "251990",
+        "score": 11.3438835
+      },
+      {
+        "name": "Anno 1800",
+        "id": "916440",
+        "score": 11.125558
+      },
+      {
+        "name": "Zero Escape: The Nonary Games",
+        "id": "477740",
+        "score": 10.969679
+      },
+      {
+        "name": "Shin Megami Tensei III Nocturne HD Remaster",
+        "id": "1413480",
+        "score": 10.73608
+      },
+      {
+        "name": "Yesterday",
+        "id": "205840",
+        "score": 10.678514
+      },
+      {
+        "name": "OMORI",
+        "id": "1150690",
+        "score": 10.578652
+      },
+      {
+        "name": "Final Fantasy IV (3D Remake)",
+        "id": "312750",
+        "score": 10.498577
+      },
+      {
+        "name": "Agarest: Generations of War",
+        "id": "237890",
+        "score": 10.426061
+      },
+      {
+        "name": "No Umbrellas Allowed",
+        "id": "1301390",
+        "score": 10.310478
+      },
+      {
+        "name": "Volgarr the Viking",
+        "id": "247240",
+        "score": 10.163397
+      },
+      {
+        "name": "Trauma",
+        "id": "98100",
+        "score": 10.131349
+      }
+    ]
+  }
+}

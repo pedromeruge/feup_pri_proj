@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 26,
+    "params": {
+      "json": "{\"query\": \"Story games with clever writing very emotional moments multiple endings voice acting cutscenes\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^1.5 supported_languages^5 steam_description^2 os^5 categories^1.5 giantbomb_overview^2 characters locations specific_concepts^1.5 ign_review_text^2\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4105,
+    "start": 0,
+    "maxScore": 15.125178,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Long Live The Queen",
+        "id": "251990",
+        "score": 15.125178
+      },
+      {
+        "name": "Final Fantasy IV (3D Remake)",
+        "id": "312750",
+        "score": 13.998103
+      },
+      {
+        "name": "Worms Ultimate Mayhem",
+        "id": "70600",
+        "score": 13.054635
+      },
+      {
+        "name": "Crossing Souls",
+        "id": "331690",
+        "score": 12.569828
+      },
+      {
+        "name": "Mansions of Madness",
+        "id": "478980",
+        "score": 11.905682
+      },
+      {
+        "name": "Oxenfree",
+        "id": "388880",
+        "score": 11.788852
+      },
+      {
+        "name": "Dragon Age: Origins - Ultimate Edition",
+        "id": "47810",
+        "score": 11.551044
+      },
+      {
+        "name": "Invisible, Inc.",
+        "id": "243970",
+        "score": 11.340458
+      },
+      {
+        "name": "Persona 4 Golden",
+        "id": "1113000",
+        "score": 11.302472
+      },
+      {
+        "name": "Persona 5 Royal",
+        "id": "1687950",
+        "score": 11.302472
+      },
+      {
+        "name": "STASIS",
+        "id": "380150",
+        "score": 11.2237425
+      },
+      {
+        "name": "One Dreamer: Prologue",
+        "id": "1274140",
+        "score": 10.984796
+      },
+      {
+        "name": "Hunt Down The Freeman",
+        "id": "723390",
+        "score": 10.846361
+      },
+      {
+        "name": "Life is Strange: True Colors",
+        "id": "936790",
+        "score": 10.84391
+      },
+      {
+        "name": "FINAL FANTASY IV",
+        "id": "1173800",
+        "score": 10.830848
+      },
+      {
+        "name": "Of Bird and Cage",
+        "id": "523770",
+        "score": 10.73243
+      },
+      {
+        "name": "Fearless Fantasy",
+        "id": "282100",
+        "score": 10.62094
+      },
+      {
+        "name": "Kathy Rain",
+        "id": "370910",
+        "score": 10.539615
+      },
+      {
+        "name": "Detroit: Become Human",
+        "id": "1222140",
+        "score": 10.431726
+      },
+      {
+        "name": "Heavy Rain",
+        "id": "960910",
+        "score": 10.411331
+      },
+      {
+        "name": "Tell Me Why",
+        "id": "1180660",
+        "score": 10.411331
+      },
+      {
+        "name": "one night, hot springs",
+        "id": "917680",
+        "score": 10.411331
+      },
+      {
+        "name": "Splatter - Zombiecalypse Now",
+        "id": "281920",
+        "score": 10.31348
+      },
+      {
+        "name": "CLANNAD",
+        "id": "324160",
+        "score": 10.308525
+      },
+      {
+        "name": "Swords of Legends Online",
+        "id": "1418100",
+        "score": 10.271416
+      },
+      {
+        "name": "Grimm's Hollow",
+        "id": "1170880",
+        "score": 10.20773
+      },
+      {
+        "name": "Torment: Tides of Numenera",
+        "id": "272270",
+        "score": 10.01669
+      },
+      {
+        "name": "Getting Over It with Bennett Foddy",
+        "id": "240720",
+        "score": 10.014752
+      },
+      {
+        "name": "Emily is Away <3",
+        "id": "978460",
+        "score": 10.01194
+      },
+      {
+        "name": "Depression Quest",
+        "id": "270170",
+        "score": 10.01194
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 30,
+    "params": {
+      "json": "{\"query\": \"Single-player action games fast-paced combat difficult punishing fights against enemies\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^1.5 supported_languages^5 steam_description^2 os^5 categories^1.5 giantbomb_overview^2 characters locations specific_concepts^1.5 ign_review_text^2\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4967,
+    "start": 0,
+    "maxScore": 13.357684,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Hades' Star",
+        "id": "755800",
+        "score": 13.357684
+      },
+      {
+        "name": "Battle Realms: Zen Edition",
+        "id": "1025600",
+        "score": 11.067371
+      },
+      {
+        "name": "Ember Strike",
+        "id": "374670",
+        "score": 11.032182
+      },
+      {
+        "name": "Carrier Command: Gaea Mission",
+        "id": "65740",
+        "score": 10.726971
+      },
+      {
+        "name": "Dreadnought",
+        "id": "835860",
+        "score": 10.549863
+      },
+      {
+        "name": "Pagan: Absent Gods",
+        "id": "992640",
+        "score": 10.471293
+      },
+      {
+        "name": "Bloodline Champions",
+        "id": "6370",
+        "score": 10.260795
+      },
+      {
+        "name": "Battlerite",
+        "id": "504370",
+        "score": 10.149286
+      },
+      {
+        "name": "Project Wingman",
+        "id": "895870",
+        "score": 10.0702715
+      },
+      {
+        "name": "Crush Online",
+        "id": "475630",
+        "score": 10.014859
+      },
+      {
+        "name": "FINAL FANTASY",
+        "id": "1173770",
+        "score": 9.88626
+      },
+      {
+        "name": "Circle Empires Rivals",
+        "id": "1100260",
+        "score": 9.876729
+      },
+      {
+        "name": "Onimusha: Warlords",
+        "id": "761600",
+        "score": 9.723073
+      },
+      {
+        "name": "AirMech Strike",
+        "id": "206500",
+        "score": 9.653746
+      },
+      {
+        "name": "Boid",
+        "id": "314010",
+        "score": 9.640055
+      },
+      {
+        "name": "Beat Saber",
+        "id": "620980",
+        "score": 9.611039
+      },
+      {
+        "name": "Serious Sam 3: BFE",
+        "id": "41070",
+        "score": 9.569177
+      },
+      {
+        "name": "Dragon Nest",
+        "id": "11610",
+        "score": 9.569051
+      },
+      {
+        "name": "Nidhogg",
+        "id": "94400",
+        "score": 9.516492
+      },
+      {
+        "name": "Curse of Mermos",
+        "id": "352160",
+        "score": 9.5138645
+      },
+      {
+        "name": "Skyforge",
+        "id": "414530",
+        "score": 9.41128
+      },
+      {
+        "name": "Hellblade: Senua's Sacrifice",
+        "id": "414340",
+        "score": 9.393158
+      },
+      {
+        "name": "PANZER BALL",
+        "id": "325260",
+        "score": 9.353704
+      },
+      {
+        "name": "Headsnatchers",
+        "id": "797410",
+        "score": 9.345882
+      },
+      {
+        "name": "Closers",
+        "id": "215830",
+        "score": 9.323786
+      },
+      {
+        "name": "Warfork",
+        "id": "671610",
+        "score": 9.307206
+      },
+      {
+        "name": "For The King",
+        "id": "527230",
+        "score": 9.305801
+      },
+      {
+        "name": "Warhammer 40,000: Dawn of War II: Retribution",
+        "id": "56400",
+        "score": 9.220414
+      },
+      {
+        "name": "Ravensword: Shadowlands",
+        "id": "253410",
+        "score": 9.18177
+      },
+      {
+        "name": "Hot Lava",
+        "id": "382560",
+        "score": 9.1625805
+      }
+    ]
+  }
+}

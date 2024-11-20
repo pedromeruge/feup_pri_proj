@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 24,
+    "params": {
+      "json": "{\"query\": \"Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^1.5 supported_languages^5 steam_description^2 os^5 categories^1.5 giantbomb_overview^2 characters locations specific_concepts^1.5 ign_review_text^2\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4852,
+    "start": 0,
+    "maxScore": 19.233412,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Calico",
+        "id": "1112890",
+        "score": 19.233412
+      },
+      {
+        "name": "Townscaper",
+        "id": "1291340",
+        "score": 16.885855
+      },
+      {
+        "name": "Obduction",
+        "id": "306760",
+        "score": 16.479227
+      },
+      {
+        "name": "Cozy Grove",
+        "id": "1458100",
+        "score": 16.12542
+      },
+      {
+        "name": "Kind Words (lo fi chill beats to write to)",
+        "id": "1070710",
+        "score": 15.638188
+      },
+      {
+        "name": "Sweet Lily Dreams",
+        "id": "300540",
+        "score": 15.212444
+      },
+      {
+        "name": "Dungeons of Dredmor",
+        "id": "98800",
+        "score": 14.956912
+      },
+      {
+        "name": "Gang Beasts",
+        "id": "285900",
+        "score": 14.362244
+      },
+      {
+        "name": "The Tiny Bang Story",
+        "id": "96000",
+        "score": 14.292935
+      },
+      {
+        "name": "Lamp Head",
+        "id": "603030",
+        "score": 14.227753
+      },
+      {
+        "name": "AaaaaAAaaaAAAaaAAAAaAAAAA!!! for the Awesome",
+        "id": "15560",
+        "score": 14.114694
+      },
+      {
+        "name": "Out of Space",
+        "id": "400080",
+        "score": 13.70075
+      },
+      {
+        "name": "Flower",
+        "id": "966330",
+        "score": 13.524308
+      },
+      {
+        "name": "A Short Hike",
+        "id": "1055540",
+        "score": 13.506929
+      },
+      {
+        "name": "Cthulhu Saves the World",
+        "id": "107310",
+        "score": 13.432339
+      },
+      {
+        "name": "Blocks That Matter",
+        "id": "111800",
+        "score": 13.180223
+      },
+      {
+        "name": "Eastward",
+        "id": "977880",
+        "score": 13.053203
+      },
+      {
+        "name": "Serious Sam: The Random Encounter",
+        "id": "201480",
+        "score": 12.910177
+      },
+      {
+        "name": "Dorfromantik",
+        "id": "1455840",
+        "score": 12.839855
+      },
+      {
+        "name": "Clover Tale",
+        "id": "463060",
+        "score": 12.725232
+      },
+      {
+        "name": "The Witness",
+        "id": "210970",
+        "score": 12.496603
+      },
+      {
+        "name": "Vacation Simulator",
+        "id": "726830",
+        "score": 12.433026
+      },
+      {
+        "name": "Zen Bound 2",
+        "id": "61600",
+        "score": 12.380827
+      },
+      {
+        "name": "Carto",
+        "id": "1172450",
+        "score": 12.2521515
+      },
+      {
+        "name": "Refunct",
+        "id": "406150",
+        "score": 11.999205
+      },
+      {
+        "name": "Giana Sisters: Twisted Dreams",
+        "id": "223220",
+        "score": 11.998828
+      },
+      {
+        "name": "House Flipper",
+        "id": "613100",
+        "score": 11.998511
+      },
+      {
+        "name": "Avadon: The Black Fortress",
+        "id": "112100",
+        "score": 11.998147
+      },
+      {
+        "name": "Bad Dream: Coma",
+        "id": "538070",
+        "score": 11.971279
+      },
+      {
+        "name": "Tales of Arise",
+        "id": "740130",
+        "score": 11.744844
+      }
+    ]
+  }
+}

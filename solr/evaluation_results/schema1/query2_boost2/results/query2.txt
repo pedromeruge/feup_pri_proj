@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 7,
+    "params": {
+      "json": "{\"query\": \"Games with optimization resource management time management routing organization scheduling Windows support in French\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^1.5 supported_languages^5 steam_description^2 os^5 categories^1.5 giantbomb_overview^2 characters locations specific_concepts^1.5 ign_review_text^2\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4735,
+    "start": 0,
+    "maxScore": 17.424683,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Pro Cycling Manager 2018",
+        "id": "704230",
+        "score": 17.424683
+      },
+      {
+        "name": "Legend of Keepers: Career of a Dungeon Manager",
+        "id": "978520",
+        "score": 16.331005
+      },
+      {
+        "name": "Tropico 4",
+        "id": "57690",
+        "score": 15.385885
+      },
+      {
+        "name": "Stationeers",
+        "id": "544550",
+        "score": 15.325646
+      },
+      {
+        "name": "Crossroads Inn Anniversary Edition",
+        "id": "867290",
+        "score": 15.296845
+      },
+      {
+        "name": "Distant Worlds: Universe",
+        "id": "261470",
+        "score": 15.184291
+      },
+      {
+        "name": "The Wandering Village",
+        "id": "1121640",
+        "score": 15.154451
+      },
+      {
+        "name": "Airport CEO",
+        "id": "673610",
+        "score": 14.985195
+      },
+      {
+        "name": "Cursed Treasure 2",
+        "id": "643960",
+        "score": 14.687087
+      },
+      {
+        "name": "Eternal Battlefield",
+        "id": "1193040",
+        "score": 14.685584
+      },
+      {
+        "name": "They Are Billions",
+        "id": "644930",
+        "score": 14.297413
+      },
+      {
+        "name": "Crying Suns",
+        "id": "873940",
+        "score": 14.089624
+      },
+      {
+        "name": "Ancestors Legacy",
+        "id": "620590",
+        "score": 13.747092
+      },
+      {
+        "name": "Holyday City: Reloaded",
+        "id": "728730",
+        "score": 13.745849
+      },
+      {
+        "name": "Train Valley",
+        "id": "353640",
+        "score": 13.673612
+      },
+      {
+        "name": "Creeper World 3: Arc Eternal",
+        "id": "280220",
+        "score": 13.647708
+      },
+      {
+        "name": "Automation Empire",
+        "id": "1112790",
+        "score": 13.284159
+      },
+      {
+        "name": "12 Labours of Hercules",
+        "id": "342580",
+        "score": 13.243765
+      },
+      {
+        "name": "Dune: Spice Wars",
+        "id": "1605220",
+        "score": 13.234331
+      },
+      {
+        "name": "MachiaVillain",
+        "id": "555510",
+        "score": 13.093725
+      },
+      {
+        "name": "Citystate",
+        "id": "774351",
+        "score": 13.093725
+      },
+      {
+        "name": "Z",
+        "id": "275530",
+        "score": 12.952309
+      },
+      {
+        "name": "Cities: Skylines",
+        "id": "255710",
+        "score": 12.896746
+      },
+      {
+        "name": "Startup Company",
+        "id": "606800",
+        "score": 12.880257
+      },
+      {
+        "name": "Supreme Commander",
+        "id": "9350",
+        "score": 12.872939
+      },
+      {
+        "name": "Cossacks 3",
+        "id": "333420",
+        "score": 12.871157
+      },
+      {
+        "name": "Project Hospital",
+        "id": "868360",
+        "score": 12.759651
+      },
+      {
+        "name": "Another Brick in The Mall",
+        "id": "521150",
+        "score": 12.759651
+      },
+      {
+        "name": "Dungeon Rushers",
+        "id": "429620",
+        "score": 12.617947
+      },
+      {
+        "name": "My Little Farmies",
+        "id": "789100",
+        "score": 12.591278
+      }
+    ]
+  }
+}

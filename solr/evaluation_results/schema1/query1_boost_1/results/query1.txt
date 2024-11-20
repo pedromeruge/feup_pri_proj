@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 61,
+    "params": {
+      "json": "{\"query\": \"Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres^2 supported_languages steam_description^1.5 os release_date categories^2 giantbomb_overview^1.5 characters locations specific_concepts^2 ign_review_text^1.5\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4852,
+    "start": 0,
+    "maxScore": 19.29074,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Kind Words (lo fi chill beats to write to)",
+        "id": "1070710",
+        "score": 19.29074
+      },
+      {
+        "name": "Townscaper",
+        "id": "1291340",
+        "score": 16.572435
+      },
+      {
+        "name": "Cozy Grove",
+        "id": "1458100",
+        "score": 14.946193
+      },
+      {
+        "name": "Potion Permit",
+        "id": "1337760",
+        "score": 13.909583
+      },
+      {
+        "name": "Calico",
+        "id": "1112890",
+        "score": 12.291483
+      },
+      {
+        "name": "Sweet Lily Dreams",
+        "id": "300540",
+        "score": 11.409334
+      },
+      {
+        "name": "Aircar",
+        "id": "1073390",
+        "score": 11.218355
+      },
+      {
+        "name": "Breath of Death VII",
+        "id": "107300",
+        "score": 10.409264
+      },
+      {
+        "name": "Microcosmum: survival of cells",
+        "id": "386260",
+        "score": 10.096693
+      },
+      {
+        "name": "Tengami",
+        "id": "299680",
+        "score": 10.081812
+      },
+      {
+        "name": "Cthulhu Saves the World",
+        "id": "107310",
+        "score": 10.012454
+      },
+      {
+        "name": "Expeditions: Rome",
+        "id": "987840",
+        "score": 9.865646
+      },
+      {
+        "name": "My Little Farmies",
+        "id": "789100",
+        "score": 9.854886
+      },
+      {
+        "name": "Keep Talking and Nobody Explodes",
+        "id": "341800",
+        "score": 9.724757
+      },
+      {
+        "name": "SpaceEngine",
+        "id": "314650",
+        "score": 9.668348
+      },
+      {
+        "name": "SKYE",
+        "id": "1214360",
+        "score": 9.640082
+      },
+      {
+        "name": "Griftlands",
+        "id": "601840",
+        "score": 9.590382
+      },
+      {
+        "name": "Obduction",
+        "id": "306760",
+        "score": 9.442569
+      },
+      {
+        "name": "Fishing Planet",
+        "id": "380600",
+        "score": 9.189081
+      },
+      {
+        "name": "Eufloria HD",
+        "id": "221180",
+        "score": 9.141545
+      },
+      {
+        "name": "The Good Time Garden",
+        "id": "1200860",
+        "score": 9.1210165
+      },
+      {
+        "name": "Vacation Simulator",
+        "id": "726830",
+        "score": 9.058572
+      },
+      {
+        "name": "Zup! Zero 2",
+        "id": "658550",
+        "score": 9.054348
+      },
+      {
+        "name": "Contraption Maker",
+        "id": "241240",
+        "score": 9.036172
+      },
+      {
+        "name": "Zup! F",
+        "id": "601220",
+        "score": 9.007652
+      },
+      {
+        "name": "Zup! 6",
+        "id": "566160",
+        "score": 9.007652
+      },
+      {
+        "name": "Zup! Zero",
+        "id": "610360",
+        "score": 9.007652
+      },
+      {
+        "name": "Zup! S",
+        "id": "617670",
+        "score": 9.007652
+      },
+      {
+        "name": "Zup! 3",
+        "id": "575640",
+        "score": 9.007652
+      },
+      {
+        "name": "Zup! 5",
+        "id": "645090",
+        "score": 9.007652
+      }
+    ]
+  }
+}

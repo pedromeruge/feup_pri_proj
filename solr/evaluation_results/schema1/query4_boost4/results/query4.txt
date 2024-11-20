@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 7,
+    "params": {
+      "json": "{\"query\": \"Single-player action games fast-paced combat difficult punishing fights against enemies\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4967,
+    "start": 0,
+    "maxScore": 22.134743,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Battle Realms: Zen Edition",
+        "id": "1025600",
+        "score": 22.134743
+      },
+      {
+        "name": "Bloodline Champions",
+        "id": "6370",
+        "score": 20.52159
+      },
+      {
+        "name": "Battlerite",
+        "id": "504370",
+        "score": 20.298573
+      },
+      {
+        "name": "Circle Empires Rivals",
+        "id": "1100260",
+        "score": 19.753458
+      },
+      {
+        "name": "AirMech Strike",
+        "id": "206500",
+        "score": 19.307491
+      },
+      {
+        "name": "Beat Saber",
+        "id": "620980",
+        "score": 19.222078
+      },
+      {
+        "name": "Nidhogg",
+        "id": "94400",
+        "score": 19.032984
+      },
+      {
+        "name": "PANZER BALL",
+        "id": "325260",
+        "score": 18.707409
+      },
+      {
+        "name": "Headsnatchers",
+        "id": "797410",
+        "score": 18.691765
+      },
+      {
+        "name": "Warfork",
+        "id": "671610",
+        "score": 18.614412
+      },
+      {
+        "name": "Hot Lava",
+        "id": "382560",
+        "score": 18.325161
+      },
+      {
+        "name": "DOOM Eternal",
+        "id": "782330",
+        "score": 18.325161
+      },
+      {
+        "name": "Heavy Metal Machines",
+        "id": "331360",
+        "score": 18.24196
+      },
+      {
+        "name": "XERA: Survival",
+        "id": "625340",
+        "score": 18.09444
+      },
+      {
+        "name": "Overgrowth",
+        "id": "25000",
+        "score": 18.081715
+      },
+      {
+        "name": "Descenders",
+        "id": "681280",
+        "score": 18.045004
+      },
+      {
+        "name": "Ball 3D: Soccer Online",
+        "id": "485610",
+        "score": 17.865204
+      },
+      {
+        "name": "Quake Champions",
+        "id": "611500",
+        "score": 17.773514
+      },
+      {
+        "name": "DRAGON BALL FighterZ",
+        "id": "678950",
+        "score": 17.66695
+      },
+      {
+        "name": "Divine Souls F2P MMO",
+        "id": "300040",
+        "score": 17.507019
+      },
+      {
+        "name": "Kopanito All-Stars Soccer",
+        "id": "399820",
+        "score": 17.468845
+      },
+      {
+        "name": "Vecter",
+        "id": "1175140",
+        "score": 17.468845
+      },
+      {
+        "name": "BallisticNG",
+        "id": "473770",
+        "score": 17.193619
+      },
+      {
+        "name": "Just Shapes & Beats",
+        "id": "531510",
+        "score": 17.021074
+      },
+      {
+        "name": "Polyball",
+        "id": "368180",
+        "score": 17.021074
+      },
+      {
+        "name": "Vindictus",
+        "id": "212160",
+        "score": 17.003325
+      },
+      {
+        "name": "Grimoire: Manastorm",
+        "id": "335430",
+        "score": 16.913122
+      },
+      {
+        "name": "Vigil: The Longest Night",
+        "id": "720560",
+        "score": 16.908392
+      },
+      {
+        "name": "Keep Talking and Nobody Explodes",
+        "id": "341800",
+        "score": 16.881752
+      },
+      {
+        "name": "First Strike: Classic",
+        "id": "587000",
+        "score": 16.770523
+      }
+    ]
+  }
+}
