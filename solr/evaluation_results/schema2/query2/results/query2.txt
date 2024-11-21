@@ -1,166 +1,166 @@
 {
   "responseHeader": {
     "status": 0,
-    "QTime": 61,
+    "QTime": 87,
     "params": {
-      "json": "{\"query\": \"Games with optimization resource management time management routing organization scheduling Windows support in French\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
+      "json": "{\"query\": \"Games with optimization resource management time management routing organization scheduling Windows support in French\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5\", \"pf\": \"steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3\", \"ps\": \"2\", \"rows\": 30}}"
     }
   },
   "response": {
     "numFound": 4933,
     "start": 0,
-    "maxScore": 8.915732,
+    "maxScore": 34.36548,
     "numFoundExact": true,
     "docs": [
       {
-        "name": "Stationeers",
-        "id": "544550",
-        "score": 8.915732
-      },
-      {
-        "name": "Holyday City: Reloaded",
-        "id": "728730",
-        "score": 8.708746
-      },
-      {
-        "name": "12 Labours of Hercules",
-        "id": "342580",
-        "score": 8.62615
-      },
-      {
-        "name": "Ancestors Legacy",
-        "id": "620590",
-        "score": 8.46448
-      },
-      {
-        "name": "Legend of Keepers: Career of a Dungeon Manager",
-        "id": "978520",
-        "score": 8.453609
-      },
-      {
-        "name": "Eternal Battlefield",
-        "id": "1193040",
-        "score": 8.279916
-      },
-      {
-        "name": "Train Valley",
-        "id": "353640",
-        "score": 8.210761
-      },
-      {
-        "name": "Foundation",
-        "id": "690830",
-        "score": 7.8472357
-      },
-      {
-        "name": "Pro Cycling Manager 2018",
-        "id": "704230",
-        "score": 7.8018317
-      },
-      {
-        "name": "Zelter",
-        "id": "1193340",
-        "score": 7.7288194
-      },
-      {
-        "name": "Automation Empire",
-        "id": "1112790",
-        "score": 7.66308
-      },
-      {
-        "name": "MachiaVillain",
-        "id": "555510",
-        "score": 7.580943
-      },
-      {
-        "name": "Citystate",
-        "id": "774351",
-        "score": 7.580943
-      },
-      {
-        "name": "GRAV",
-        "id": "332500",
-        "score": 7.5594487
-      },
-      {
-        "name": "Supreme Commander",
-        "id": "9350",
-        "score": 7.4491158
+        "name": "Cities: Skylines",
+        "id": "255710",
+        "score": 34.36548
       },
       {
         "name": "Tropico 4",
         "id": "57690",
-        "score": 7.421995
+        "score": 32.5812
       },
       {
-        "name": "Cursed Treasure 2",
-        "id": "643960",
-        "score": 7.4124966
+        "name": "Europa Universalis IV",
+        "id": "236850",
+        "score": 30.506771
       },
       {
-        "name": "Ancestors Legacy Free Peasant Edition",
-        "id": "720380",
-        "score": 7.3228025
-      },
-      {
-        "name": "F1 2018",
-        "id": "737800",
-        "score": 7.2947836
-      },
-      {
-        "name": "Mushroom Wars",
-        "id": "431250",
-        "score": 7.2733407
-      },
-      {
-        "name": "The Wandering Village",
-        "id": "1121640",
-        "score": 7.269767
-      },
-      {
-        "name": "Duskers",
-        "id": "254320",
-        "score": 7.2082896
-      },
-      {
-        "name": "The Banner Saga 2",
-        "id": "281640",
-        "score": 7.202381
-      },
-      {
-        "name": "Another Brick in The Mall",
-        "id": "521150",
-        "score": 7.1960373
-      },
-      {
-        "name": "Subnautica",
-        "id": "264710",
-        "score": 7.174348
-      },
-      {
-        "name": "Startup Company",
-        "id": "606800",
-        "score": 7.1238303
-      },
-      {
-        "name": "Transport Fever 2",
-        "id": "1066780",
-        "score": 7.1148033
-      },
-      {
-        "name": "The Universim",
-        "id": "352720",
-        "score": 7.0530977
+        "name": "Train Valley",
+        "id": "353640",
+        "score": 28.451178
       },
       {
         "name": "F1 2014",
         "id": "226580",
-        "score": 7.0178194
+        "score": 27.972729
       },
       {
-        "name": "Airport CEO",
-        "id": "673610",
-        "score": 7.0107193
+        "name": "Victoria II",
+        "id": "42960",
+        "score": 27.704659
+      },
+      {
+        "name": "Supreme Commander",
+        "id": "9350",
+        "score": 27.206127
+      },
+      {
+        "name": "Transport Fever 2",
+        "id": "1066780",
+        "score": 25.715927
+      },
+      {
+        "name": "Zoo Tycoon: Ultimate Animal Collection",
+        "id": "613880",
+        "score": 25.328247
+      },
+      {
+        "name": "12 Labours of Hercules III: Girl Power",
+        "id": "360650",
+        "score": 25.14385
+      },
+      {
+        "name": "Project Hospital",
+        "id": "868360",
+        "score": 25.090916
+      },
+      {
+        "name": "MachiaVillain",
+        "id": "555510",
+        "score": 25.07888
+      },
+      {
+        "name": "Supreme Commander 2",
+        "id": "40100",
+        "score": 25.016275
+      },
+      {
+        "name": "Duskers",
+        "id": "254320",
+        "score": 24.917107
+      },
+      {
+        "name": "Super Motherload",
+        "id": "269110",
+        "score": 24.90081
+      },
+      {
+        "name": "Crying Suns",
+        "id": "873940",
+        "score": 24.451164
+      },
+      {
+        "name": "Automation Empire",
+        "id": "1112790",
+        "score": 24.203106
+      },
+      {
+        "name": "Another Brick in The Mall",
+        "id": "521150",
+        "score": 24.154871
+      },
+      {
+        "name": "Cookie Clicker",
+        "id": "1454400",
+        "score": 24.045885
+      },
+      {
+        "name": "Factorio",
+        "id": "427520",
+        "score": 24.014412
+      },
+      {
+        "name": "Cossacks 3",
+        "id": "333420",
+        "score": 23.991362
+      },
+      {
+        "name": "F1 2018",
+        "id": "737800",
+        "score": 23.958254
+      },
+      {
+        "name": "Dune: Spice Wars",
+        "id": "1605220",
+        "score": 23.753754
+      },
+      {
+        "name": "Subnautica",
+        "id": "264710",
+        "score": 23.44658
+      },
+      {
+        "name": "Ticket to Ride",
+        "id": "108200",
+        "score": 23.327261
+      },
+      {
+        "name": "Judgment: Apocalypse Survival Simulation",
+        "id": "455980",
+        "score": 23.300388
+      },
+      {
+        "name": "Victoria 3",
+        "id": "529340",
+        "score": 23.230661
+      },
+      {
+        "name": "Lethis - Path of Progress",
+        "id": "359230",
+        "score": 23.205956
+      },
+      {
+        "name": "Startup Company",
+        "id": "606800",
+        "score": 23.191479
+      },
+      {
+        "name": "Resident Evil 4",
+        "id": "254700",
+        "score": 23.187248
       }
     ]
   }

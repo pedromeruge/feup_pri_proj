@@ -1,166 +1,166 @@
 {
   "responseHeader": {
     "status": 0,
-    "QTime": 72,
+    "QTime": 59,
     "params": {
-      "json": "{\"query\": \"Story games with clever writing very emotional moments multiple endings voice acting cutscenes\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
+      "json": "{\"query\": \"Story games with clever writing very emotional moments multiple endings voice acting cutscenes\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5\", \"pf\": \"steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3\", \"ps\": \"2\", \"rows\": 30}}"
     }
   },
   "response": {
     "numFound": 4812,
     "start": 0,
-    "maxScore": 10.696387,
+    "maxScore": 26.943277,
     "numFoundExact": true,
     "docs": [
       {
-        "name": "Torment: Tides of Numenera",
-        "id": "272270",
-        "score": 10.696387
-      },
-      {
-        "name": "Final Fantasy IV (3D Remake)",
-        "id": "312750",
-        "score": 9.416859
-      },
-      {
-        "name": "Long Live The Queen",
-        "id": "251990",
-        "score": 8.664751
-      },
-      {
-        "name": "STASIS",
-        "id": "380150",
-        "score": 8.424298
-      },
-      {
-        "name": "Lucid9: Inciting Incident",
-        "id": "439940",
-        "score": 8.293619
-      },
-      {
-        "name": "Our End of the World",
-        "id": "703700",
-        "score": 8.068593
-      },
-      {
-        "name": "Kathy Rain",
-        "id": "370910",
-        "score": 7.9651637
-      },
-      {
-        "name": "Whispers of a Machine",
-        "id": "631570",
-        "score": 7.903274
-      },
-      {
-        "name": "Kaptain Brawe: A Brawe New World",
-        "id": "65080",
-        "score": 7.518192
-      },
-      {
-        "name": "FINAL FANTASY IV",
-        "id": "1173800",
-        "score": 7.491639
-      },
-      {
-        "name": "Fearless Fantasy",
-        "id": "282100",
-        "score": 7.2560296
-      },
-      {
-        "name": "The Legend of Heroes: Trails of Cold Steel",
-        "id": "538680",
-        "score": 7.2235947
-      },
-      {
-        "name": "The Stanley Parable",
-        "id": "221910",
-        "score": 7.2226954
-      },
-      {
-        "name": "CONCLUSE",
-        "id": "826230",
-        "score": 7.124895
-      },
-      {
         "name": "Oxenfree",
         "id": "388880",
-        "score": 7.025071
+        "score": 26.943277
       },
       {
-        "name": "The Dark Pictures Anthology: Man of Medan",
-        "id": "939850",
-        "score": 7.023882
-      },
-      {
-        "name": "Ultimate Custom Night",
-        "id": "871720",
-        "score": 7.0069323
-      },
-      {
-        "name": "MIND: Path to Thalamus Enhanced Edition",
-        "id": "296070",
-        "score": 6.978823
+        "name": "I Have No Mouth, and I Must Scream",
+        "id": "245390",
+        "score": 25.19784
       },
       {
         "name": "CLANNAD",
         "id": "324160",
-        "score": 6.9742312
+        "score": 24.042019
       },
       {
-        "name": "Thronebreaker: The Witcher Tales",
-        "id": "973760",
-        "score": 6.9719915
+        "name": "The Stanley Parable",
+        "id": "221910",
+        "score": 23.947634
       },
       {
-        "name": "Lighthouse Keeper",
-        "id": "1469370",
-        "score": 6.896831
+        "name": "Tyranny",
+        "id": "362960",
+        "score": 22.90489
       },
       {
-        "name": "Jazzpunk: Director's Cut",
-        "id": "250260",
-        "score": 6.8775826
-      },
-      {
-        "name": "Miracle Snack Shop",
-        "id": "995460",
-        "score": 6.807739
-      },
-      {
-        "name": "WWE 2K19",
-        "id": "817130",
-        "score": 6.8041096
-      },
-      {
-        "name": "Late Shift",
-        "id": "584980",
-        "score": 6.7182913
-      },
-      {
-        "name": "Getting Over It with Bennett Foddy",
-        "id": "240720",
-        "score": 6.663703
+        "name": "Waking Mars",
+        "id": "227200",
+        "score": 22.904646
       },
       {
         "name": "Life is Strange: True Colors",
         "id": "936790",
-        "score": 6.649063
+        "score": 22.837723
       },
       {
-        "name": "Marie's Room",
-        "id": "648390",
-        "score": 6.6255226
+        "name": "Zero Escape: The Nonary Games",
+        "id": "477740",
+        "score": 22.758892
       },
       {
-        "name": "Alpha Polaris : A Horror Adventure Game",
-        "id": "405780",
-        "score": 6.5106306
+        "name": "Persona 4 Golden",
+        "id": "1113000",
+        "score": 22.59467
       },
       {
-        "name": "Before Your Eyes",
-        "id": "1082430",
-        "score": 6.501089
+        "name": "2064: Read Only Memories",
+        "id": "330820",
+        "score": 22.305206
+      },
+      {
+        "name": "Primordia",
+        "id": "227000",
+        "score": 22.129684
+      },
+      {
+        "name": "The Darkness II",
+        "id": "67370",
+        "score": 21.63179
+      },
+      {
+        "name": "Dark Deception",
+        "id": "332950",
+        "score": 21.522379
+      },
+      {
+        "name": "Binary Domain",
+        "id": "203750",
+        "score": 21.163857
+      },
+      {
+        "name": "The Swapper",
+        "id": "231160",
+        "score": 21.070677
+      },
+      {
+        "name": "UNDYING",
+        "id": "638990",
+        "score": 20.800196
+      },
+      {
+        "name": "Return of the Obra Dinn",
+        "id": "653530",
+        "score": 20.548958
+      },
+      {
+        "name": "Long Live The Queen",
+        "id": "251990",
+        "score": 20.078768
+      },
+      {
+        "name": "The Song of Saya",
+        "id": "702050",
+        "score": 20.024014
+      },
+      {
+        "name": "Trauma",
+        "id": "98100",
+        "score": 19.74844
+      },
+      {
+        "name": "Coffee Talk",
+        "id": "914800",
+        "score": 19.744917
+      },
+      {
+        "name": "Persona 5 Royal",
+        "id": "1687950",
+        "score": 19.274593
+      },
+      {
+        "name": "Suzerain",
+        "id": "1207650",
+        "score": 19.270525
+      },
+      {
+        "name": "No Umbrellas Allowed",
+        "id": "1301390",
+        "score": 19.263823
+      },
+      {
+        "name": "Of Bird and Cage",
+        "id": "523770",
+        "score": 19.24164
+      },
+      {
+        "name": "Furi",
+        "id": "423230",
+        "score": 18.999989
+      },
+      {
+        "name": "Detroit: Become Human",
+        "id": "1222140",
+        "score": 18.985563
+      },
+      {
+        "name": "Heavy Rain",
+        "id": "960910",
+        "score": 18.847012
+      },
+      {
+        "name": "Dream Daddy: A Dad Dating Simulator",
+        "id": "654880",
+        "score": 18.838547
+      },
+      {
+        "name": "The Beginner's Guide",
+        "id": "303210",
+        "score": 18.835129
       }
     ]
   }

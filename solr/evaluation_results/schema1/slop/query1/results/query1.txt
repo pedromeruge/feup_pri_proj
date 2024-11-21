@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 8,
+    "params": {
+      "json": "{\"query\": \"Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5\", \"pf\": \"steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3\", \"ps\": \"2\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4852,
+    "start": 0,
+    "maxScore": 29.818573,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Kind Words (lo fi chill beats to write to)",
+        "id": "1070710",
+        "score": 29.818573
+      },
+      {
+        "name": "Townscaper",
+        "id": "1291340",
+        "score": 27.98649
+      },
+      {
+        "name": "Cozy Grove",
+        "id": "1458100",
+        "score": 25.613834
+      },
+      {
+        "name": "Tengami",
+        "id": "299680",
+        "score": 21.794771
+      },
+      {
+        "name": "Potion Permit",
+        "id": "1337760",
+        "score": 21.689672
+      },
+      {
+        "name": "Spirits",
+        "id": "210170",
+        "score": 20.459305
+      },
+      {
+        "name": "Calico",
+        "id": "1112890",
+        "score": 19.530174
+      },
+      {
+        "name": "Proteus",
+        "id": "219680",
+        "score": 19.133066
+      },
+      {
+        "name": "The Tiny Bang Story",
+        "id": "96000",
+        "score": 19.067852
+      },
+      {
+        "name": "A Short Hike",
+        "id": "1055540",
+        "score": 18.953575
+      },
+      {
+        "name": "Obduction",
+        "id": "306760",
+        "score": 18.40935
+      },
+      {
+        "name": "Shelter",
+        "id": "244710",
+        "score": 18.02263
+      },
+      {
+        "name": "Carto",
+        "id": "1172450",
+        "score": 18.01458
+      },
+      {
+        "name": "Vacation Simulator",
+        "id": "726830",
+        "score": 17.81718
+      },
+      {
+        "name": "Plantera",
+        "id": "421040",
+        "score": 17.668072
+      },
+      {
+        "name": "Ravenous Devils",
+        "id": "1615290",
+        "score": 17.542156
+      },
+      {
+        "name": "Race The Sun",
+        "id": "253030",
+        "score": 17.374725
+      },
+      {
+        "name": "Aircar",
+        "id": "1073390",
+        "score": 17.214931
+      },
+      {
+        "name": "Dorfromantik",
+        "id": "1455840",
+        "score": 17.053959
+      },
+      {
+        "name": "Contraption Maker",
+        "id": "241240",
+        "score": 16.991476
+      },
+      {
+        "name": "Gang Beasts",
+        "id": "285900",
+        "score": 16.780222
+      },
+      {
+        "name": "Tricky Towers",
+        "id": "437920",
+        "score": 16.61415
+      },
+      {
+        "name": "Full Mojo Rampage",
+        "id": "225280",
+        "score": 16.479017
+      },
+      {
+        "name": "Zen Bound 2",
+        "id": "61600",
+        "score": 16.435738
+      },
+      {
+        "name": "Refunct",
+        "id": "406150",
+        "score": 16.258062
+      },
+      {
+        "name": "My Little Farmies",
+        "id": "789100",
+        "score": 16.233612
+      },
+      {
+        "name": "Grim Legends 2: Song of the Dark Swan",
+        "id": "279800",
+        "score": 16.134119
+      },
+      {
+        "name": "Eastward",
+        "id": "977880",
+        "score": 15.99669
+      },
+      {
+        "name": "Expeditions: Rome",
+        "id": "987840",
+        "score": 15.992697
+      },
+      {
+        "name": "Tumblestone",
+        "id": "269710",
+        "score": 15.974594
+      }
+    ]
+  }
+}

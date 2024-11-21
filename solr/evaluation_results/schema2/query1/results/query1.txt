@@ -1,166 +1,166 @@
 {
   "responseHeader": {
     "status": 0,
-    "QTime": 5,
+    "QTime": 219,
     "params": {
-      "json": "{\"query\": \"Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name required_age price developers publishers genres supported_languages steam_description os release_date categories giantbomb_overview characters locations specific_concepts ign_review_text\", \"rows\": 30}}"
+      "json": "{\"query\": \"Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5\", \"pf\": \"steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3\", \"ps\": \"2\", \"rows\": 30}}"
     }
   },
   "response": {
     "numFound": 4722,
     "start": 0,
-    "maxScore": 9.150581,
+    "maxScore": 28.258602,
     "numFoundExact": true,
     "docs": [
       {
         "name": "Kind Words (lo fi chill beats to write to)",
         "id": "1070710",
-        "score": 9.150581
+        "score": 28.258602
       },
       {
         "name": "Townscaper",
         "id": "1291340",
-        "score": 6.5736322
-      },
-      {
-        "name": "H-Isekai Loves",
-        "id": "1660280",
-        "score": 6.5142508
-      },
-      {
-        "name": "Wingspan",
-        "id": "1054490",
-        "score": 6.415386
-      },
-      {
-        "name": "Forward to the Sky",
-        "id": "333250",
-        "score": 6.415386
-      },
-      {
-        "name": "Refunct",
-        "id": "406150",
-        "score": 6.3275666
-      },
-      {
-        "name": "Sweet Lily Dreams",
-        "id": "300540",
-        "score": 6.275713
-      },
-      {
-        "name": "Dungeons of Dredmor",
-        "id": "98800",
-        "score": 6.1921377
-      },
-      {
-        "name": "The Secret of Tremendous Corporation",
-        "id": "380140",
-        "score": 5.9132366
-      },
-      {
-        "name": "Dorfromantik",
-        "id": "1455840",
-        "score": 5.903613
-      },
-      {
-        "name": "Spooky's Jump Scare Mansion",
-        "id": "356670",
-        "score": 5.8701935
-      },
-      {
-        "name": "Clover Tale",
-        "id": "463060",
-        "score": 5.762652
-      },
-      {
-        "name": "Potion Permit",
-        "id": "1337760",
-        "score": 5.7468643
+        "score": 23.207188
       },
       {
         "name": "Tengami",
         "id": "299680",
-        "score": 5.7354026
-      },
-      {
-        "name": "Voices from the Sea",
-        "id": "348620",
-        "score": 5.7192883
-      },
-      {
-        "name": "Cloud Climber",
-        "id": "1509820",
-        "score": 5.6997337
-      },
-      {
-        "name": "SKYE",
-        "id": "1214360",
-        "score": 5.6565614
-      },
-      {
-        "name": "Cute Honey 2",
-        "id": "1399370",
-        "score": 5.588222
-      },
-      {
-        "name": "Feel The Snow",
-        "id": "538100",
-        "score": 5.578615
-      },
-      {
-        "name": "PowerWash Simulator",
-        "id": "1290000",
-        "score": 5.5082946
-      },
-      {
-        "name": "Adventure Escape Mysteries",
-        "id": "1141020",
-        "score": 5.500197
-      },
-      {
-        "name": "The Good Time Garden",
-        "id": "1200860",
-        "score": 5.318291
-      },
-      {
-        "name": "Garden Story",
-        "id": "1062140",
-        "score": 5.305583
+        "score": 21.639603
       },
       {
         "name": "Cozy Grove",
         "id": "1458100",
-        "score": 5.2958436
+        "score": 21.297506
+      },
+      {
+        "name": "Grim Legends 2: Song of the Dark Swan",
+        "id": "279800",
+        "score": 18.372654
+      },
+      {
+        "name": "Potion Permit",
+        "id": "1337760",
+        "score": 17.55808
       },
       {
         "name": "Calico",
         "id": "1112890",
-        "score": 5.2800255
+        "score": 17.43089
       },
       {
-        "name": "Cute Honey",
-        "id": "1347430",
-        "score": 5.2299385
+        "name": "SKYE",
+        "id": "1214360",
+        "score": 16.969683
       },
       {
-        "name": "Typoman",
-        "id": "336240",
-        "score": 5.0949965
+        "name": "Spirits",
+        "id": "210170",
+        "score": 16.714407
       },
       {
-        "name": "Mini Battlegrounds",
-        "id": "658470",
-        "score": 4.9789805
+        "name": "Refunct",
+        "id": "406150",
+        "score": 16.381422
       },
       {
-        "name": "Catch a Falling Star",
-        "id": "451880",
-        "score": 4.958355
+        "name": "A Short Hike",
+        "id": "1055540",
+        "score": 16.0304
+      },
+      {
+        "name": "The Good Time Garden",
+        "id": "1200860",
+        "score": 15.954873
+      },
+      {
+        "name": "Ravenous Devils",
+        "id": "1615290",
+        "score": 15.50382
+      },
+      {
+        "name": "Forward to the Sky",
+        "id": "333250",
+        "score": 15.459341
+      },
+      {
+        "name": "Carto",
+        "id": "1172450",
+        "score": 15.446949
+      },
+      {
+        "name": "The Tiny Bang Story",
+        "id": "96000",
+        "score": 15.35802
+      },
+      {
+        "name": "Grim Legends: The Forsaken Bride",
+        "id": "284850",
+        "score": 15.221952
+      },
+      {
+        "name": "Plantera",
+        "id": "421040",
+        "score": 15.195485
       },
       {
         "name": "Obduction",
         "id": "306760",
-        "score": 4.9306192
+        "score": 15.109901
+      },
+      {
+        "name": "Nightmares from the Deep: The Cursed Heart",
+        "id": "259740",
+        "score": 14.998911
+      },
+      {
+        "name": "Proteus",
+        "id": "219680",
+        "score": 14.890971
+      },
+      {
+        "name": "Tumblestone",
+        "id": "269710",
+        "score": 14.609601
+      },
+      {
+        "name": "Eastward",
+        "id": "977880",
+        "score": 14.485027
+      },
+      {
+        "name": "NightSky",
+        "id": "99700",
+        "score": 14.434153
+      },
+      {
+        "name": "theBlu",
+        "id": "451520",
+        "score": 14.195881
+      },
+      {
+        "name": "Zen Bound 2",
+        "id": "61600",
+        "score": 14.165727
+      },
+      {
+        "name": "AER Memories of Old",
+        "id": "331870",
+        "score": 14.155359
+      },
+      {
+        "name": "Everything",
+        "id": "582270",
+        "score": 14.019449
+      },
+      {
+        "name": "Garden Story",
+        "id": "1062140",
+        "score": 14.004348
+      },
+      {
+        "name": "Cloud Climber",
+        "id": "1509820",
+        "score": 13.787045
       }
     ]
   }

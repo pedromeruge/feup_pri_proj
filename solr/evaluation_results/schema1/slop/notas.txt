@@ -1,0 +1,11 @@
+Resultados para schema1
+Schema: schema 1 final
+Query: letras grandes e pequenas, todas as palavras estão bem escritas
+
+Weights:                  "pf": "steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3",
+    "ps": "3",
+
+NOTA: DEU EXATAMENT EIGUAL AO PS=2 todas as queries
+
+
+

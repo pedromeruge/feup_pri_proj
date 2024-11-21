@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 67,
+    "params": {
+      "json": "{\"query\": \"Single-player action games fast-paced combat difficult punishing fights against enemies\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5\", \"pf\": \"steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3\", \"ps\": \"2\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4955,
+    "start": 0,
+    "maxScore": 16.174603,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Blasphemous",
+        "id": "774361",
+        "score": 16.174603
+      },
+      {
+        "name": "Vigil: The Longest Night",
+        "id": "720560",
+        "score": 16.168375
+      },
+      {
+        "name": "Tumblestone",
+        "id": "269710",
+        "score": 14.93333
+      },
+      {
+        "name": "Ziggurat",
+        "id": "308420",
+        "score": 14.808971
+      },
+      {
+        "name": "DOOM Eternal: The Ancient Gods - Part Two",
+        "id": "1098293",
+        "score": 14.641836
+      },
+      {
+        "name": "Skyforge",
+        "id": "414530",
+        "score": 14.562007
+      },
+      {
+        "name": "Crash Wheels",
+        "id": "514920",
+        "score": 14.365489
+      },
+      {
+        "name": "Yury",
+        "id": "321950",
+        "score": 14.029602
+      },
+      {
+        "name": "Aliens versus Predator Classic 2000",
+        "id": "3730",
+        "score": 13.836745
+      },
+      {
+        "name": "Aim Hero",
+        "id": "518030",
+        "score": 13.836745
+      },
+      {
+        "name": "OMFG: One Million Fatal Guns",
+        "id": "1555710",
+        "score": 13.742999
+      },
+      {
+        "name": "Guacamelee! 2",
+        "id": "534550",
+        "score": 13.675776
+      },
+      {
+        "name": "oO",
+        "id": "367570",
+        "score": 13.649119
+      },
+      {
+        "name": "Linea, the Game",
+        "id": "428900",
+        "score": 13.649119
+      },
+      {
+        "name": "Cloudbuilt",
+        "id": "262390",
+        "score": 13.562661
+      },
+      {
+        "name": "Tribal Pass",
+        "id": "470270",
+        "score": 13.466513
+      },
+      {
+        "name": "DOOM Eternal: The Ancient Gods - Part One",
+        "id": "1098292",
+        "score": 13.466513
+      },
+      {
+        "name": "Devil Daggers",
+        "id": "422970",
+        "score": 13.288728
+      },
+      {
+        "name": "Enemy Front",
+        "id": "256190",
+        "score": 13.032796
+      },
+      {
+        "name": "Overgrowth",
+        "id": "25000",
+        "score": 13.018481
+      },
+      {
+        "name": "OLDTV",
+        "id": "643270",
+        "score": 12.807118
+      },
+      {
+        "name": "10 Second Ninja X",
+        "id": "435790",
+        "score": 12.782467
+      },
+      {
+        "name": "Super Hexagon",
+        "id": "221640",
+        "score": 12.782467
+      },
+      {
+        "name": "Super Crate Box",
+        "id": "212800",
+        "score": 12.782467
+      },
+      {
+        "name": "DED",
+        "id": "571350",
+        "score": 12.782467
+      },
+      {
+        "name": "Defiance 2050",
+        "id": "743090",
+        "score": 12.75452
+      },
+      {
+        "name": "DESYNC",
+        "id": "390030",
+        "score": 12.622177
+      },
+      {
+        "name": "Bloody Walls",
+        "id": "531960",
+        "score": 12.622177
+      },
+      {
+        "name": "Sonic Frontiers",
+        "id": "1237320",
+        "score": 12.54627
+      },
+      {
+        "name": "Until You Fall",
+        "id": "858260",
+        "score": 12.532482
+      }
+    ]
+  }
+}
