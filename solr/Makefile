@@ -27,11 +27,23 @@ up:
 	docker exec -it pri_solr cp /data/custom/stopwords_custom.txt /var/solr/data/videogames/conf/
 	docker exec -it pri_solr cp /data/lemmatizers/lemmas_spacy.txt /var/solr/data/videogames/conf/
 	curl -X POST -H 'Content-type:application/json' \
-	--data-binary "@${PWD}/schemas/schema.json" \
+	--data-binary "@${PWD}/schemas/schema_milestone2.json" \
 	http://localhost:8983/solr/videogames/schema
 	docker exec -it pri_solr bin/solr post -c videogames /data/merged_games_final.json
 
-#get results for query1 from solr
+.PHONY: up_vector
+up_vector:
+	docker run -p 8983:8983 --name pri_solr -v ${PWD}:/data -d solr:9 solr-precreate videogames
+	sleep 6
+	docker exec -it pri_solr cp /data/custom/synonyms_gaming.txt /var/solr/data/videogames/conf/
+	docker exec -it pri_solr cp /data/custom/stopwords_custom.txt /var/solr/data/videogames/conf/
+	docker exec -it pri_solr cp /data/lemmatizers/lemmas_spacy.txt /var/solr/data/videogames/conf/
+	curl -X POST -H 'Content-type:application/json' \
+	--data-binary "@${PWD}/schemas/schema_vector_milestone3.json" \
+	http://localhost:8983/solr/videogames/schema
+	docker exec -it pri_solr bin/solr post -c videogames /data/merged_games_embeddings_final2.json
+
+#get results for query1 from solrs
 .PHONY: query1
 query1:
 	scripts/query_solr.py --query queries/query1/query1.json --uri http://localhost:8983/solr --collection videogames > queries/query1/results/query1.txt

@@ -1,0 +1,257 @@
+{
+    "add-field-type": [
+        {
+            "name": "stringField",
+            "class": "solr.StrField"
+        },
+        {
+            "name": "intField",
+            "class": "solr.IntPointField"
+        },
+        {
+            "name": "floatField",
+            "class": "solr.FloatPointField"
+        },
+        {
+            "name": "dateField",
+            "class": "solr.DatePointField"
+        },
+        {
+            "name": "longTextualField",
+            "class": "solr.TextField",
+            "indexAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
+                },
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms_gaming.txt",
+                        "expand": true
+                    },
+                    {
+                        "class": "solr.StopFilterFactory",
+                        "words": "stopwords_custom.txt",
+                        "ignoreCase": true
+                    },
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "lemmas_spacy.txt",
+                        "expand": true
+                    }
+                ]
+            },
+            "queryAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
+                },
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+                    {
+                        "class": "solr.StopFilterFactory",
+                        "words": "stopwords_custom.txt",
+                        "ignoreCase": true
+                    },
+                    {
+                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
+                    }
+                ]
+            }
+        },
+        
+         
+        {
+            "name": "specificNamesTextualField",
+            "class": "solr.TextField",
+            "indexAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
+                },
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+                    {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "synonyms_gaming.txt",
+                        "expand": true
+                    }
+                ]
+            },
+            "queryAnalyzer": {
+                "tokenizer": {
+                    "class": "solr.StandardTokenizerFactory"
+                },
+                "filters": [
+                    {
+                        "class": "solr.LowerCaseFilterFactory"
+                    },
+                    {
+                        "class": "solr.ASCIIFoldingFilterFactory"
+                    },
+                    {
+                        "class": "solr.PatternReplaceFilterFactory",
+                        "pattern": "(\\b\\w+)'(s|re|ve|ll|d|m)\\b",
+                        "replacement": "$1",
+                        "replace": "all"
+                    },
+                    {
+                        "class": "solr.RemoveDuplicatesTokenFilterFactory"
+                    }
+                ]
+            }
+        }
+    ],
+    
+    "add-field": [
+        {
+            "name": "name",
+            "type": "specificNamesTextualField",
+            "indexed": true
+        },
+        {
+            "name": "required_age",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "price",
+            "type": "floatField",
+            "indexed": true
+        },
+        {
+            "name": "developers",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "publishers",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "genres",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "supported_languages",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "header_image",
+            "type": "stringField"
+        },
+        {
+            "name": "steam_description",
+            "type": "longTextualField",
+            "indexed": true
+        },
+        {
+            "name": "os",
+            "type": "stringField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "video",
+            "type": "stringField"
+        },
+        {
+            "name": "avg_sales",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "steam_upvotes",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "steam_downvotes",
+            "type": "intField",
+            "indexed": true
+        },
+        {
+            "name": "release_date",
+            "type": "dateField",
+            "indexed": true
+        },
+        {
+            "name": "categories",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "giantbomb_overview",
+            "type": "longTextualField",
+            "indexed": true
+        },
+        {
+            "name": "characters",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "locations",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "specific_concepts",
+            "type": "specificNamesTextualField",
+            "indexed": true,
+            "multiValued": true
+        },
+        {
+            "name": "ign_review_text",
+            "type": "longTextualField",
+            "indexed": true
+        },
+        {
+            "name": "ign_score",
+            "type": "floatField",
+            "indexed": true
+        }
+    ]
+}

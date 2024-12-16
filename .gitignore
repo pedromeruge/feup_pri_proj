@@ -166,3 +166,12 @@ config.py
 *.csv
 models/*.bak_*
 startup.sh
+solr/queries/
+*.zip
+
+!solr/schemas/*
+!solr/merged_games_*
+!solr/queries/query1/query1.json
+!solr/queries/query2/query2.json
+!solr/queries/query3/query3.json
+!solr/queries/query4/query4.json
