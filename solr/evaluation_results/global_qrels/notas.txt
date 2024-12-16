@@ -1,0 +1,1 @@
+Resultados de qrels parar cada query com todos os resultados obtidos para os vários setups

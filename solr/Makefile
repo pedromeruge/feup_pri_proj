@@ -27,7 +27,7 @@ up:
 	docker exec -it pri_solr cp /data/custom/stopwords_custom.txt /var/solr/data/videogames/conf/
 	docker exec -it pri_solr cp /data/lemmatizers/lemmas_spacy.txt /var/solr/data/videogames/conf/
 	curl -X POST -H 'Content-type:application/json' \
-	--data-binary "@${PWD}/schemas/schema_milestone2.json" \
+	--data-binary "@${PWD}/schemas/schema3_milestone3.json" \
 	http://localhost:8983/solr/videogames/schema
 	docker exec -it pri_solr bin/solr post -c videogames /data/merged_games_final.json
 
@@ -46,6 +46,7 @@ up_vector:
 #get results for query1 from solrs
 .PHONY: query1
 query1:
+	mkdir -p queries/query1/results
 	scripts/query_solr.py --query queries/query1/query1.json --uri http://localhost:8983/solr --collection videogames > queries/query1/results/query1.txt
 	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
 
@@ -59,6 +60,7 @@ query1_stats:
 #get results for query2 from solr
 .PHONY: query2
 query2:
+	mkdir -p queries/query2/results
 	scripts/query_solr.py --query queries/query2/query2.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
 	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
 
@@ -72,6 +74,7 @@ query2_stats:
 #get results for query3 from solr
 .PHONY: query3
 query3:
+	mkdir -p queries/query3/results
 	scripts/query_solr.py --query queries/query3/query3.json --uri http://localhost:8983/solr --collection videogames > queries/query3/results/query3.txt
 	cat queries/query3/results/query3.txt | scripts/solr2trec.py > queries/query3/results/query3_trec.txt
 
@@ -85,6 +88,7 @@ query3_stats:
 #get results for query4 from solr
 .PHONY: query4
 query4:
+	mkdir -p queries/query4/results
 	scripts/query_solr.py --query queries/query4/query4.json --uri http://localhost:8983/solr --collection videogames > queries/query4/results/query4.txt
 	cat queries/query4/results/query4.txt | scripts/solr2trec.py > queries/query4/results/query4_trec.txt
 

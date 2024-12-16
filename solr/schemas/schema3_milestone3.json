@@ -76,6 +76,11 @@
                         "ignoreCase": true
                     },
                     {
+                        "class": "solr.SynonymGraphFilterFactory",
+                        "synonyms": "lemmas_spacy.txt",
+                        "expand": true
+                    },
+                    {
                         "class": "solr.RemoveDuplicatesTokenFilterFactory"
                     }
                 ]

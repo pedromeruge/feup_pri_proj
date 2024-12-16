@@ -1,0 +1,5 @@
+Resultados para schema3
+
+Schema: schema idêntico ao milestone 2 schema 1, com um filtro extra de lemmatizer nas queries de long textual fields (erro que tínhamos cometido na milestone 2)
+
+Query: letras grandes e pequenas, todas as palavras estão bem escritas
