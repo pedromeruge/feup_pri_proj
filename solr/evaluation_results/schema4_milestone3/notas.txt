@@ -1,0 +1,6 @@
+Resultados para schema3
+
+Schema: schema idêntico ao milestone 2 schema 1, sem removeduplicatetokens filter no query parsing
+(Como o schema3 deu pior que os melhores resultados da milestone 2, voltei a remover o lemmatizer das queries)
+
+Query: letras grandes e pequenas, todas as palavras estão bem escritas

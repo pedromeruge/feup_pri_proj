@@ -1,0 +1,167 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 94,
+    "params": {
+      "json": "{\"query\": \"Games with optimization resource management time management routing organization scheduling Windows support in French\", \"params\": {\"defType\": \"edismax\", \"fl\": \"id,name,score\", \"qf\": \"name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5\", \"pf\": \"steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3\", \"ps\": \"2\", \"rows\": 30}}"
+    }
+  },
+  "response": {
+    "numFound": 4735,
+    "start": 0,
+    "maxScore": 30.77177,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "name": "Tropico 4",
+        "id": "57690",
+        "score": 30.77177
+      },
+      {
+        "name": "The Wandering Village",
+        "id": "1121640",
+        "score": 30.308903
+      },
+      {
+        "name": "Cursed Treasure 2",
+        "id": "643960",
+        "score": 29.374174
+      },
+      {
+        "name": "They Are Billions",
+        "id": "644930",
+        "score": 28.594826
+      },
+      {
+        "name": "Crying Suns",
+        "id": "873940",
+        "score": 28.179249
+      },
+      {
+        "name": "Train Valley",
+        "id": "353640",
+        "score": 27.347223
+      },
+      {
+        "name": "Creeper World 3: Arc Eternal",
+        "id": "280220",
+        "score": 27.295416
+      },
+      {
+        "name": "Automation Empire",
+        "id": "1112790",
+        "score": 26.568317
+      },
+      {
+        "name": "Dune: Spice Wars",
+        "id": "1605220",
+        "score": 26.468662
+      },
+      {
+        "name": "MachiaVillain",
+        "id": "555510",
+        "score": 26.18745
+      },
+      {
+        "name": "Citystate",
+        "id": "774351",
+        "score": 26.18745
+      },
+      {
+        "name": "Cities: Skylines",
+        "id": "255710",
+        "score": 25.793491
+      },
+      {
+        "name": "Startup Company",
+        "id": "606800",
+        "score": 25.760513
+      },
+      {
+        "name": "Cossacks 3",
+        "id": "333420",
+        "score": 25.742313
+      },
+      {
+        "name": "Distant Worlds: Universe",
+        "id": "261470",
+        "score": 25.536861
+      },
+      {
+        "name": "Project Hospital",
+        "id": "868360",
+        "score": 25.519302
+      },
+      {
+        "name": "Another Brick in The Mall",
+        "id": "521150",
+        "score": 25.519302
+      },
+      {
+        "name": "My Little Farmies",
+        "id": "789100",
+        "score": 25.182556
+      },
+      {
+        "name": "Judgment: Apocalypse Survival Simulation",
+        "id": "455980",
+        "score": 25.00264
+      },
+      {
+        "name": "Europa Universalis IV",
+        "id": "236850",
+        "score": 24.681889
+      },
+      {
+        "name": "Rebuild 3: Gangs of Deadsville",
+        "id": "257170",
+        "score": 24.284298
+      },
+      {
+        "name": "The Universim",
+        "id": "352720",
+        "score": 24.284298
+      },
+      {
+        "name": "Victoria II",
+        "id": "42960",
+        "score": 24.019697
+      },
+      {
+        "name": "NGU INDUSTRIES",
+        "id": "1433990",
+        "score": 23.67612
+      },
+      {
+        "name": "AI War 2",
+        "id": "573410",
+        "score": 23.547161
+      },
+      {
+        "name": "Victoria 3",
+        "id": "529340",
+        "score": 23.527798
+      },
+      {
+        "name": "Startopia",
+        "id": "243040",
+        "score": 23.432661
+      },
+      {
+        "name": "Driftland: The Magic Revival",
+        "id": "718650",
+        "score": 23.302347
+      },
+      {
+        "name": "Empires of the Undergrowth",
+        "id": "463530",
+        "score": 23.070847
+      },
+      {
+        "name": "Evil Genius 2: World Domination",
+        "id": "700600",
+        "score": 23.070847
+      }
+    ]
+  }
+}

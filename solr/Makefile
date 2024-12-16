@@ -27,7 +27,7 @@ up:
 	docker exec -it pri_solr cp /data/custom/stopwords_custom.txt /var/solr/data/videogames/conf/
 	docker exec -it pri_solr cp /data/lemmatizers/lemmas_spacy.txt /var/solr/data/videogames/conf/
 	curl -X POST -H 'Content-type:application/json' \
-	--data-binary "@${PWD}/schemas/schema3_milestone3.json" \
+	--data-binary "@${PWD}/schemas/schema_milestone2.json" \
 	http://localhost:8983/solr/videogames/schema
 	docker exec -it pri_solr bin/solr post -c videogames /data/merged_games_final.json
 

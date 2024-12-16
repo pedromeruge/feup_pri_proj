@@ -19,14 +19,19 @@ with open(response_file, "r") as resp_file:
 
 # Prepare the output lines
 output_lines = []
+to_fill_ids = []
 for id_ in ids:
     if id_ in reference_dict:
         output_lines.append(f"{id_} {reference_dict[id_]}")
     else:
         output_lines.append(f"{id_} ")
+        to_fill_ids.append(id_)
 
 # Write the results to the output file
 with open(output_file, "w") as out_file:
     out_file.write("\n".join(output_lines))
 
 print(f"Output written to {output_file}")
+print(f"Must fill the following entries:")
+for id_ in to_fill_ids:
+    print(id_)
