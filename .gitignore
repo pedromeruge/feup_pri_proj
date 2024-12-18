@@ -175,3 +175,4 @@ solr/queries/
 !solr/queries/query2/query2.json
 !solr/queries/query3/query3.json
 !solr/queries/query4/query4.json
+!solr/final_embeddings_datasets/*

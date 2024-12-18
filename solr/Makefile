@@ -41,7 +41,7 @@ up_vector:
 	curl -X POST -H 'Content-type:application/json' \
 	--data-binary "@${PWD}/schemas/schema_vector_milestone3.json" \
 	http://localhost:8983/solr/videogames/schema
-	docker exec -it pri_solr bin/solr post -c videogames /data/merged_games_embeddings_final2.json
+	docker exec -it pri_solr bin/solr post -c videogames /data/final_embeddings_datasets/merged_games_final_minilm_l6_v2.json
 
 #get results for query1 from solrs
 .PHONY: query1
@@ -49,6 +49,14 @@ query1:
 	mkdir -p queries/query1/results
 	scripts/query_solr.py --query queries/query1/query1.json --uri http://localhost:8983/solr --collection videogames > queries/query1/results/query1.txt
 	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
+
+#get results for query1 from solr with embeddings
+.PHONY: query1_vector
+query1_vector:
+	mkdir -p queries/query1/results
+	cat queries/query1/query1.json | python3 scripts/query_embedding.py > queries/query1/results/query1.txt
+	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
+
 
 #after defining trec file, get stats for query1
 .PHONY: query1_stats
