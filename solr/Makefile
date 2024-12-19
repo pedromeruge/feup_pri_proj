@@ -41,7 +41,7 @@ up_vector:
 	curl -X POST -H 'Content-type:application/json' \
 	--data-binary "@${PWD}/schemas/schema_vector_milestone3.json" \
 	http://localhost:8983/solr/videogames/schema
-	docker exec -it pri_solr bin/solr post -c videogames /data/final_embeddings_datasets/merged_games_final_minilm_l6_v2.json
+	docker exec -it pri_solr bin/solr post -c videogames /data/final_embeddings_datasets/merged_games_final_bert_base_nli_mean.json
 
 #get results for query1 from solrs
 .PHONY: query1
@@ -54,9 +54,15 @@ query1:
 .PHONY: query1_vector
 query1_vector:
 	mkdir -p queries/query1/results
-	cat queries/query1/query1.json | python3 scripts/query_embedding.py > queries/query1/results/query1.txt
+	cat queries/query1/query1.json | python3 scripts/query_embedding_orig.py > queries/query1/results/query1.txt
 	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
 
+#get results for query1 from solr with embeddings
+# .PHONY: query1_vector2
+# query1_vector2:
+# 	mkdir -p queries/query1/results
+# 	cat queries/query1/query1.json | python3 scripts/query_embedding.py > queries/query1/results/query1.txt
+# 	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
 
 #after defining trec file, get stats for query1
 .PHONY: query1_stats
@@ -70,6 +76,13 @@ query1_stats:
 query2:
 	mkdir -p queries/query2/results
 	scripts/query_solr.py --query queries/query2/query2.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
+	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
+
+#get results for query1 from solr with embeddings
+.PHONY: query2_vector
+query2_vector:
+	mkdir -p queries/query2/results
+	cat queries/query2/query2.json | python3 scripts/query_embedding_orig.py > queries/query2/results/query2.txt
 	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
 
 #after defining trec file, get stats for query2
@@ -86,6 +99,13 @@ query3:
 	scripts/query_solr.py --query queries/query3/query3.json --uri http://localhost:8983/solr --collection videogames > queries/query3/results/query3.txt
 	cat queries/query3/results/query3.txt | scripts/solr2trec.py > queries/query3/results/query3_trec.txt
 
+#get results for query1 from solr with embeddings
+.PHONY: query3_vector
+query3_vector:
+	mkdir -p queries/query3/results
+	cat queries/query3/query3.json | python3 scripts/query_embedding_orig.py > queries/query3/results/query3.txt
+	cat queries/query3/results/query3.txt | scripts/solr2trec.py > queries/query3/results/query3_trec.txt
+
 #after defining trec file, get stats for query3
 .PHONY: query3_stats
 query3_stats:
@@ -98,6 +118,13 @@ query3_stats:
 query4:
 	mkdir -p queries/query4/results
 	scripts/query_solr.py --query queries/query4/query4.json --uri http://localhost:8983/solr --collection videogames > queries/query4/results/query4.txt
+	cat queries/query4/results/query4.txt | scripts/solr2trec.py > queries/query4/results/query4_trec.txt
+
+#get results for query1 from solr with embeddings
+.PHONY: query4_vector
+query4_vector:
+	mkdir -p queries/query4/results
+	cat queries/query4/query4.json | python3 scripts/query_embedding_orig.py > queries/query4/results/query4.txt
 	cat queries/query4/results/query4.txt | scripts/solr2trec.py > queries/query4/results/query4_trec.txt
 
 #after defining trec file, get stats for query4
