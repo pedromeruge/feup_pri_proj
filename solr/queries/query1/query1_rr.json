@@ -1,13 +1,13 @@
 {
-  "query": "Casual indie games cozy cute peaceful atmospheres satisfying relaxing experience",
+  "query": "Relaxing casual indie games, charmingly cozy games, beautifully cute games, incredibly peaceful atmospheres, intensely satisfying experience, soothingly relaxing experience, simple casual indie videogames, exceptionally cozy videogames, artistically cute videogames, wonderfully peaceful atmospheres, deeply satisfying gaming experience, extremely relaxing gaming experience",
   "params": {
     "defType": "edismax",
     "fl": "id,name,score",
     "qf": "name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5",
     "pf": "steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3",
     "ps": "2",
-    "rq": "{!rerank reRankDocs=100 reRankQuery=$rqq reRankWeight=1.0}",
-    "rqq": "{!func}sum(steam_upvotes,avg_sales)",
+    "rq": "{!rerank reRankDocs=100 reRankQuery=$rqq reRankWeight=3.0}",
+    "rqq": "{!func}log(steam_upvotes)",
     "rows": 30
   }
 }

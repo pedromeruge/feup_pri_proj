@@ -54,7 +54,7 @@ query1:
 .PHONY: query1_exp
 query1_exp:
 	mkdir -p queries/query1/results
-	scripts/query_solr_with_expansion.py --query queries/query1/query1.json --uri http://localhost:8983/solr --collection videogames > queries/query1/results/query1.txt
+	scripts/query_solr.py --query queries/query1/query1_exp.json --uri http://localhost:8983/solr --collection videogames > queries/query1/results/query1.txt
 	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
 
 #get results for query1 from reranking
@@ -63,6 +63,14 @@ query1_rr:
 	mkdir -p queries/query1/results
 	scripts/query_solr.py --query queries/query1/query1_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query1/results/query1.txt
 	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
+
+#get results for query1 from reranking2
+.PHONY: query1_exp_rr
+query1_exp_rr:
+	mkdir -p queries/query1/results
+	scripts/query_solr.py --query queries/query1/query1_exp_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query1/results/query1.txt
+	cat queries/query1/results/query1.txt | scripts/solr2trec.py > queries/query1/results/query1_trec.txt
+
 
 #get results for query1 from solr with embeddings
 .PHONY: query1_vector
@@ -96,7 +104,7 @@ query2:
 .PHONY: query2_exp
 query2_exp:
 	mkdir -p queries/query2/results
-	scripts/query_solr_with_expansion.py --query queries/query2/query2.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
+	scripts/query_solr.py --query queries/query2/query2_exp.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
 	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
 
 #get results for query2 with reranking
@@ -104,6 +112,13 @@ query2_exp:
 query2_rr:
 	mkdir -p queries/query2/results
 	scripts/query_solr.py --query queries/query2/query2_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
+	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
+
+#get results for query2 with reranking2
+.PHONY: query2_rr
+query2_exp_rr:
+	mkdir -p queries/query2/results
+	scripts/query_solr.py --query queries/query2/query2_exp_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query2/results/query2.txt
 	cat queries/query2/results/query2.txt | scripts/solr2trec.py > queries/query2/results/query2_trec.txt
 
 #get results for query1 from solr with embeddings
@@ -131,7 +146,7 @@ query3:
 .PHONY: query3_exp
 query3_exp:
 	mkdir -p queries/query3/results
-	scripts/query_solr_with_expansion.py --query queries/query3/query3.json --uri http://localhost:8983/solr --collection videogames > queries/query3/results/query3.txt
+	scripts/query_solr.py --query queries/query3/query3_exp.json --uri http://localhost:8983/solr --collection videogames > queries/query3/results/query3.txt
 	cat queries/query3/results/query3.txt | scripts/solr2trec.py > queries/query3/results/query3_trec.txt
 
 #get results for query3 with reranking
@@ -139,6 +154,13 @@ query3_exp:
 query3_rr:
 	mkdir -p queries/query3/results
 	scripts/query_solr.py --query queries/query3/query3_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query3/results/query3.txt
+	cat queries/query3/results/query3.txt | scripts/solr2trec.py > queries/query3/results/query3_trec.txt
+
+#get results for query3 with reranking
+.PHONY: query3_exp_rr
+query3_exp_rr:
+	mkdir -p queries/query3/results
+	scripts/query_solr.py --query queries/query3/query3_exp_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query3/results/query3.txt
 	cat queries/query3/results/query3.txt | scripts/solr2trec.py > queries/query3/results/query3_trec.txt
 
 #get results for query1 from solr with embeddings
@@ -166,7 +188,7 @@ query4:
 .PHONY: query4_exp
 query4_exp:
 	mkdir -p queries/query4/results
-	scripts/query_solr_with_expansion.py --query queries/query4/query4.json --uri http://localhost:8983/solr --collection videogames > queries/query4/results/query4.txt
+	scripts/query_solr.py --query queries/query4/query4_exp.json --uri http://localhost:8983/solr --collection videogames > queries/query4/results/query4.txt
 	cat queries/query4/results/query4.txt | scripts/solr2trec.py > queries/query4/results/query4_trec.txt
 
 #get results for query4 from solr
@@ -174,6 +196,13 @@ query4_exp:
 query4_rr:
 	mkdir -p queries/query4/results
 	scripts/query_solr.py --query queries/query4/query4_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query4/results/query4.txt
+	cat queries/query4/results/query4.txt | scripts/solr2trec.py > queries/query4/results/query4_trec.txt
+
+#get results for query4 from solr
+.PHONY: query4_exp_rr
+query4_exp_rr:
+	mkdir -p queries/query4/results
+	scripts/query_solr.py --query queries/query4/query4_exp_rr.json --uri http://localhost:8983/solr --collection videogames > queries/query4/results/query4.txt
 	cat queries/query4/results/query4.txt | scripts/solr2trec.py > queries/query4/results/query4_trec.txt
 
 #get results for query1 from solr with embeddings

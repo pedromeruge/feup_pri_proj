@@ -15,12 +15,8 @@ def combined_solr_query(endpoint, collection, query_data, embedding, query_text)
     url = f"{endpoint}/{collection}/select"
 
     # Add the combined score calculation
-    query_data["params"]["score"] = (
-        f"sum("
-        f"query({{!edismax q='{query_text}'}})^1.0,"
-        f"query({{!knn f=embedding_vector topK=30}}{embedding})^100.0"
-        f")"
-    )
+    query_data["params"]["boost"] = "sum( { !knn f=vector topK=30 q='}^0.5, score^1 )"
+
 
     # Send the request to Solr
     headers = {
@@ -78,6 +74,7 @@ def main():
         
        # Print raw results to stdout
         print(json.dumps(results, indent=2))
+
     except requests.HTTPError as e:
         print(f"Error {e.response.status_code}: {e.response.text}", file=sys.stderr)
         sys.exit(1)

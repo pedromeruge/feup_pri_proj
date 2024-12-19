@@ -1,13 +1,13 @@
 {
-  "query": "Story games with clever writing very emotional moments multiple endings voice acting cutscenes",
+  "query": "Narrative-driven games featuring ingenious, intelligent, and witty writing, profoundly moving, poignant, and heart-wrenching emotional moments, branching storylines leading to several different, varied, and distinct endings, professional voice acting performances, high-quality, well-produced, cinematic cutscenes.",
   "params": {
     "defType": "edismax",
     "fl": "id,name,score",
     "qf": "name developers publishers genres^3 supported_languages^5 steam_description^1.5 os^5 categories^3 giantbomb_overview^1.5 characters locations specific_concepts^3 ign_review_text^1.5",
     "pf": "steam_description^5 giantbomb_overview^5 ign_review_text^5 categories^3 specific_concepts^3",
     "ps": "2",
-    "rq": "{!rerank reRankDocs=100 reRankQuery=$rqq reRankWeight=1.0}",
-    "rqq": "{!func}sum(steam_upvotes,avg_sales)",
+    "rq": "{!rerank reRankDocs=100 reRankQuery=$rqq reRankWeight=3.0}",
+    "rqq": "{!func}log(steam_upvotes)",
     "rows": 30
   }
 }

@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer
 #To use, run inside folder solr/ like this: cat merged_games_final.json | python3 scripts/get_embeddings.py > merged_games_embeddings_final.json
 
 # Load the SentenceTransformer model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 
 def get_embedding(text):
     # The model.encode() method already returns a list of floats
